@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khalid Mir | Business & Marketing Advisor | Digital Strategist </title>
+    <title>Khalid Mir | Marketing & Business Advisor | Digital Strategist </title>
     
     <!-- SEO / AIEO Metadata -->
-    <meta name="description" content="Khalid Hussain Mir (Khalidgraphy) - Business & Marketing Advisor and Digital Strategist. Helping businesses navigate digital markets through strategy, marketing, and real-world execution.">
-    <meta name="keywords" content="Khalid Hussain Mir, Khalidgraphy, Business Advisor, Marketing Strategy, Digital Strategist, Business Systems, UAE Business Consultant">
-    <meta property="og:title" content="Khalid Hussain Mir | Business & Marketing Advisor">
+    <meta name="description" content="Khalid Hussain Mir (Khalidgraphy) - Marketing & Business Advisor and Digital Strategist. Helping businesses navigate digital markets through strategy, marketing, and real-world execution.">
+    <meta name="keywords" content="Khalid Hussain Mir, Khalidgraphy, Business Advisor, Marketing Strategy, Dubai Digital Makreting, Business Systems, UAE Business Consultant, entrepreneur from Quetta, Balochistan">
+    <meta property="og:title" content="Khalid Mir | Marketing & Business Advisor | Khalidgraphy">
     <meta property="og:description" content="Moving businesses from scattered efforts to structured execution. Strategy. Marketing. Execution.">
     <meta property="og:type" content="website">
     
@@ -27,6 +27,11 @@
                 extend: {
                     colors: {
                         gold: '#FFD700',
+                        navy: {
+                            900: '#0b1220',
+                            800: '#0f172a',
+                            700: '#1e293b'
+                        }
                     }
                 }
             }
@@ -35,25 +40,25 @@
 
     <style>
         :root {
-            /* Light variables */
             --bg: #ffffff;
+            --bg-alt: #fafafa;
             --primary-text: #111111;
             --secondary-text: #555555;
             --divider: #f3f4f6;
             --gold: #FFD700;
         }
 
-        /* Default to Dark theme variables */
         .dark, :root {
-            --bg: #0a0a0a;
+            --bg: #0b1220;
+            --bg-alt: #0f172a;
             --primary-text: #f9f9f9;
-            --secondary-text: #a1a1aa;
-            --divider: #1f1f23;
+            --secondary-text: #94a3b8;
+            --divider: #1e293b;
         }
 
-        /* Override when explicitly light */
         .light {
             --bg: #ffffff;
+            --bg-alt: #fafafa;
             --primary-text: #111111;
             --secondary-text: #555555;
             --divider: #f3f4f6;
@@ -61,8 +66,8 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            font-size: 17px;
-            line-height: 1.6;
+            font-size: 16px;
+            line-height: 1.7;
             color: var(--primary-text);
             background: var(--bg);
             -webkit-font-smoothing: antialiased;
@@ -70,23 +75,32 @@
             transition: background-color 0.4s ease, color 0.4s ease;
         }
 
+        @media (min-width: 768px) {
+            body { font-size: 17px; }
+        }
+
         h1, .h1-style {
             font-family: 'Inter', sans-serif;
             font-weight: 800;
-            letter-spacing: -0.03em;
+            letter-spacing: -0.04em;
             color: var(--primary-text);
+            line-height: 1.15;
         }
 
         h2, h3, h4 {
             font-family: 'Playfair Display', serif;
             font-weight: 600;
             color: var(--primary-text);
-            line-height: 1.2;
+            line-height: 1.3;
         }
 
         section {
-            padding: 2.5rem 0; 
+            padding: 4rem 0;
             border-bottom: 1px solid var(--divider);
+        }
+
+        @media (min-width: 1024px) {
+            section { padding: 6rem 0; }
         }
 
         .container-custom {
@@ -95,132 +109,216 @@
             padding: 0 1.5rem;
         }
 
-        /* Goldish Hover Effects */
-        a, button {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        a:hover {
-            color: var(--gold) !important;
-        }
-
-        .button {
-            display: inline-block;
-            border: 1px solid var(--primary-text);
-            padding: 10px 20px;
-            background: var(--bg);
-            color: var(--primary-text);
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        .button:hover {
-            color: #000 !important;
-            border-color: var(--gold);
-            background: var(--gold);
-            transform: translateY(-2px);
-        }
-
-        .button-ghost {
-            color: var(--secondary-text);
-            font-size: 15px;
-            text-decoration: underline;
-            text-underline-offset: 4px;
-            font-weight: 500;
-        }
-
-        /* Dynamic Navigation */
+        /* Glass Nav */
         nav {
-            border-bottom: 1px solid var(--divider);
-            background: var(--bg);
-            opacity: 0.95;
-            backdrop-filter: blur(12px);
-            transition: all 0.3s ease;
+            background: transparent;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             height: 80px;
         }
 
+        @media (min-width: 1024px) {
+            nav { height: 90px; }
+        }
+
         nav.scrolled {
-            height: 60px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-
-        .nav-logo {
-            height: 40px;
-            width: 40px;
-            transition: all 0.3s ease;
-            object-fit: cover;
-        }
-
-        nav.scrolled .nav-logo {
-            height: 32px;
-            width: 32px;
+            height: 70px;
+            background: rgba(11, 18, 32, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--divider);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
         }
 
         .nav-link {
-            font-size: 13px;
+            font-size: 12px;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.15em;
             color: var(--secondary-text);
             font-weight: 600;
+            transition: color 0.3s ease;
         }
 
-        /* Profile Image Flipped */
+        .nav-link:hover {
+            color: var(--gold) !important;
+        }
+
+        /* Focus Area Cards */
+        .focus-card {
+            padding: 2rem;
+            background: transparent;
+            border-left: 1px solid var(--divider);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .focus-card:hover {
+                transform: translateY(-8px);
+                background: var(--bg-alt);
+                border-left-color: var(--gold);
+                box-shadow: 0 20px 40px -15px rgba(0,0,0,0.25);
+            }
+        }
+
+        .focus-card:hover h4 {
+            color: var(--gold);
+        }
+
+        /* Profile Architectural Frame */
+        .profile-wrapper {
+            position: relative;
+            display: inline-block;
+            padding: 8px;
+        }
+
+        @media (min-width: 768px) {
+            .profile-wrapper { padding: 12px; }
+        }
+        
+        .profile-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--gold);
+            opacity: 0.3;
+            transform: translate(6px, 6px);
+            transition: all 0.5s ease;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .profile-wrapper::before { transform: translate(8px, 8px); }
+        }
+
+        .profile-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: -20px;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+            z-index: -1;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+
+        .profile-wrapper:hover::before {
+            transform: translate(0, 0);
+            opacity: 0.6;
+        }
+
+        .profile-img-container {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            background: var(--bg-alt);
+            border: 1px solid var(--divider);
+            box-shadow: 0 20px 50px -20px rgba(0,0,0,0.5);
+        }
+
         .profile-img {
             width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 4px;
+            max-width: 320px;
+            display: block;
             transform: scaleX(-1);
-            transition: transform 0.5s ease, filter 0.7s ease;
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @media (min-width: 1024px) {
+            .profile-img { max-width: 380px; }
         }
         
         .profile-img:hover {
-            transform: scaleX(-1) scale(1.02);
+            transform: scaleX(-1) scale(1.05);
             filter: grayscale(0%);
         }
 
+        .market-reality-card {
+            border-left: 2px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2.5rem 0;
+            background: rgba(255, 215, 0, 0.02);
+        }
+
+        @media (min-width: 768px) {
+            .market-reality-card { padding-left: 2rem; margin: 3rem 0; }
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            border: 1px solid var(--primary-text);
+            padding: 12px 24px;
+            background: transparent;
+            color: var(--primary-text);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .button { padding: 12px 28px; }
+        }
+
+        .button:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: #0b1220 !important;
+            transform: translateY(-2px);
+        }
+
+        /* Fade-in Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hero Intro Divider */
+        .hero-divider {
+            height: 1px;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: linear-gradient(90deg, transparent, var(--divider), transparent);
+            opacity: 0.3;
+        }
+
+        /* Mobile Menu Animation */
+        #mobileMenu {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            opacity: 0;
+            transform: translateY(-10px);
+            pointer-events: none;
+        }
+
+        #mobileMenu.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
         .sidebar-label {
-            font-size: 11px;
+            font-size: 10px;
             text-transform: uppercase;
-            letter-spacing: 0.2em;
-            color: #999;
-            font-weight: 700;
-            margin-bottom: 1rem;
+            letter-spacing: 0.25em;
+            color: var(--gold);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
             display: block;
         }
 
-        .market-reality-card {
-            border-left: 3px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        footer {
-            padding: 1.5rem 0;
-            background: var(--bg);
-        }
-
-        /* Dark Mode Toggle Switch */
-        #themeToggle {
-            cursor: pointer;
-            padding: 8px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid var(--divider);
-        }
-        #themeToggle:hover {
-            background: var(--divider);
-        }
-
         @media (max-width: 768px) {
-            section { padding: 2rem 0; }
+            .nav-logo { height: 32px; width: 32px; }
+            .h1-style { font-size: 2.25rem !important; }
         }
     </style>
 </head>
@@ -229,31 +327,33 @@
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 flex items-center" id="mainNav">
         <div class="container-custom w-full flex items-center justify-between">
-            <div class="flex items-center space-x-3">
+            <div class="flex items-center space-x-3 sm:space-x-4">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png" 
-                     alt="Khalid Logo" class="nav-logo rounded-full border border-gray-100 dark:border-gray-800">
-                <a href="#" class="font-extrabold tracking-tighter text-lg uppercase transition-all">Khalid Mir</a>
+                     alt="Khalid Logo" class="nav-logo h-8 w-8 sm:h-10 sm:w-10 rounded-full border border-navy-700">
+                <div class="flex flex-col">
+                    <a href="#" class="font-extrabold tracking-tight text-base sm:text-lg uppercase leading-none">Khalid Mir</a>
+                    <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-secondary-text font-medium mt-1">Marketing & Business Advisor</span>
+                </div>
             </div>
             
-            <div class="hidden md:flex items-center space-x-8">
+            <div class="hidden md:flex items-center space-x-8 lg:space-x-10">
                 <a href="#about" class="nav-link">Home</a>
                 <a href="#philosophy" class="nav-link">Thinking</a>
                 <a href="#work" class="nav-link">Work</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 
-                <!-- Theme Toggle -->
-                <button id="themeToggle" aria-label="Toggle Theme" class="text-secondary-text">
-                    <svg id="sunIcon" class="hidden dark:block" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-                    <svg id="moonIcon" class="block dark:hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <button id="themeToggle" aria-label="Toggle Theme" class="text-secondary-text hover:text-gold transition-colors">
+                    <svg id="sunIcon" class="hidden dark:block" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg id="moonIcon" class="block dark:hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 </button>
             </div>
 
-            <div class="flex items-center md:hidden space-x-4">
-                <button id="themeToggleMobile" class="p-2">
+            <div class="flex items-center md:hidden space-x-3">
+                <button id="themeToggleMobile" class="p-2 text-secondary-text">
                     <svg class="dark:block hidden" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707"/></svg>
                     <svg class="block dark:hidden" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 </button>
-                <button id="menuBtn">
+                <button id="menuBtn" class="text-primary-text p-2">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16M4 16h16"/></svg>
                 </button>
             </div>
@@ -261,42 +361,50 @@
     </nav>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobileMenu" class="fixed inset-0 bg-white dark:bg-[#0a0a0a] z-[60] flex flex-col items-center justify-center space-y-8 text-2xl hidden">
-        <button class="absolute top-8 right-8" id="closeBtn">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>
+    <div id="mobileMenu" class="fixed inset-0 bg-navy-900 z-[60] flex flex-col items-center justify-center space-y-8 text-2xl hidden">
+        <button class="absolute top-8 right-8 p-2" id="closeBtn">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
-        <a href="#about" class="mobile-link font-bold">Home</a>
-        <a href="#philosophy" class="mobile-link font-bold">Thinking</a>
-        <a href="#work" class="mobile-link font-bold">Areas of Work</a>
-        <a href="#contact" class="mobile-link font-bold">Advisory</a>
+        <a href="#about" class="mobile-link font-bold tracking-tight">Home</a>
+        <a href="#philosophy" class="mobile-link font-bold tracking-tight">Thinking</a>
+        <a href="#work" class="mobile-link font-bold tracking-tight">Areas of Work</a>
+        <a href="#contact" class="mobile-link font-bold tracking-tight">Advisory</a>
     </div>
 
-    <!-- 1. Hero -->
-    <header class="pt-40 pb-16 border-b border-divider">
-        <div class="container-custom">
-            <div class="grid md:grid-cols-12 gap-8 items-center">
-                <div class="md:col-span-7">
-                    <span class="sidebar-label">Positioning</span>
-                    <h1 class="text-2xl mb-2">
-                        Khalid Hussain Mir 
-                        <a href="https://khalidgraphy.com" target="_blank" class="no-underline text-gray-400 hover:text-gold transition-colors">(Khalidgraphy)</a>
-                    </h1>
-                    <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-8">Business & Marketing Advisor | Digital Strategist</p>
-                    
-                    <h2 class="h1-style text-4xl md:text-5xl lg:text-6xl mb-8 leading-[1.1]">
-                        Helping businesses navigate digital markets through strategy, marketing, and real-world execution.
-                    </h2>
-                    
-                    <p class="text-lg text-gray-500 font-medium mb-10">Strategy. Marketing. Execution.</p>
+    <!-- Hero Divider -->
+    <div class="hero-divider mt-20 sm:mt-24"></div>
 
-                    <div class="flex items-center space-x-6">
+    <!-- 1. Hero -->
+    <header class="pt-16 sm:pt-24 pb-12 sm:pb-20 border-b border-divider">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 lg:gap-12 items-center">
+                <div class="md:col-span-7 reveal">
+                    <h1 class="text-xl sm:text-2xl mb-2 opacity-90">
+                        Khalid Hussain Mir 
+                        <a href="https://khalidgraphy.com" target="_blank" class="no-underline text-secondary-text hover:text-gold transition-colors">(Khalidgraphy)</a>
+                    </h1>
+                    <p class="text-[9px] sm:text-[10px] font-black text-secondary-text uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-8 sm:mb-10">Marketing & Business Advisor | Digital Strategist</p>
+                    
+                    <div class="max-w-xl">
+                        <h2 class="h1-style text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-8 sm:mb-10 leading-[1.2] sm:leading-[1.15]">
+                            Helping businesses navigate digital markets through strategy, marketing, and real-world execution.
+                        </h2>
+                    </div>
+                    
+                    <p class="text-lg sm:text-xl text-secondary-text font-medium mb-10 sm:mb-12 tracking-wide">Strategy. Marketing. Execution.</p>
+
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6">
                         <a href="https://khalidgraphy.com/subscribe" class="button">Explore Insights</a>
-                        <a href="#contact" class="button-ghost">Work With Me</a>
+                        <a href="#contact" class="button-ghost text-center sm:text-left border-b border-transparent hover:border-gold transition-all duration-300">Work With Me</a>
                     </div>
                 </div>
-                <div class="md:col-span-5 flex justify-center md:justify-end">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlTm6EmTNPC9RrQshGLEMZjDwDXuhmoISOa8h9Zf9HFqIAC9gmaZ1L-ExRSAjIHyVCal2eAul8wbz2_iTHRURXvqZLQceqVIm9TjqPC_COy0L9XRjW5x2MqQIiCq31WAeOKLaklo8Si9NKK89AeDvErxvdFfvZfWgtB8DEoGn7oHQlQ0ZkkfpA7NKiK4Q/s320/Khalid%2024.png" 
-                         alt="Khalid Hussain Mir" class="profile-img grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="md:col-span-5 flex justify-center md:justify-end reveal mt-12 md:mt-0" style="transition-delay: 200ms;">
+                    <div class="profile-wrapper">
+                        <div class="profile-img-container">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlTm6EmTNPC9RrQshGLEMZjDwDXuhmoISOa8h9Zf9HFqIAC9gmaZ1L-ExRSAjIHyVCal2eAul8wbz2_iTHRURXvqZLQceqVIm9TjqPC_COy0L9XRjW5x2MqQIiCq31WAeOKLaklo8Si9NKK89AeDvErxvdFfvZfWgtB8DEoGn7oHQlQ0ZkkfpA7NKiK4Q/s320/Khalid%2024.png" 
+                                 alt="Khalid Hussain Mir" class="profile-img grayscale">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -305,19 +413,21 @@
     <!-- 2. Perspective -->
     <section id="about">
         <div class="container-custom">
-            <div class="grid md:grid-cols-12 gap-8">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
                 <div class="md:col-span-4">
                     <span class="sidebar-label">Perspective</span>
                 </div>
                 <div class="md:col-span-8">
-                    <div class="max-w-2xl space-y-6">
-                        <h3 class="text-2xl md:text-3xl">I focus on how businesses actually make money in digital markets, not on trends or motivational narratives.</h3>
-                        <p class="text-gray-600 dark:text-gray-400">
-                            Much of the digital world today is filled with hype, trends, and motivational noise. My focus is different. I work on the practical side of business, where strategy, marketing, and communication meet real market conditions.
-                        </p>
-                        <p class="text-gray-600 dark:text-gray-400">
-                            My work is grounded in observation, experience, and the realities of how businesses actually operate. Instead of chasing every new platform or trend, I focus on helping organizations build systems that support sustainable business growth.
-                        </p>
+                    <div class="max-w-2xl space-y-6 sm:space-y-8">
+                        <h3 class="text-2xl sm:text-3xl md:text-4xl">I focus on how businesses actually make money in digital markets, not on trends or motivational narratives.</h3>
+                        <div class="space-y-4 sm:space-y-6 text-secondary-text text-base sm:text-lg">
+                            <p>
+                                Much of the digital world today is filled with hype, trends, and motivational noise. My focus is different. I work on the practical side of business, where strategy, marketing, and communication meet real market conditions.
+                            </p>
+                            <p>
+                                My work is grounded in observation, experience, and the realities of how businesses actually operate. Instead of chasing every new platform or trend, I focus on helping organizations build systems that support sustainable business growth.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -325,28 +435,28 @@
     </section>
 
     <!-- 3. Personal Philosophy -->
-    <section id="philosophy" class="bg-[#fafafa] dark:bg-[#0c0c0c]">
+    <section id="philosophy" class="bg-navy-800">
         <div class="container-custom">
-            <div class="grid md:grid-cols-12 gap-8">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
                 <div class="md:col-span-4">
                     <span class="sidebar-label">Philosophy</span>
                 </div>
                 <div class="md:col-span-8">
-                    <div class="max-w-2xl space-y-6">
-                        <h3 class="text-2xl md:text-3xl">Business is often discussed in terms of trends, tools, and tactics. In reality, fundamentals succeed.</h3>
-                        <p class="text-gray-600 dark:text-gray-400">Over the years I have become increasingly cautious of the noise that surrounds the digital world. New platforms appear, new tactics are promoted, and every few months there is a new formula for growth. Most of these ideas are short-lived.</p>
+                    <div class="max-w-2xl space-y-6 sm:space-y-8">
+                        <h3 class="text-2xl sm:text-3xl md:text-4xl">Business is often discussed in terms of trends, tools, and tactics. In reality, fundamentals succeed.</h3>
+                        <p class="text-secondary-text text-base sm:text-lg leading-relaxed">Over the years I have become increasingly cautious of the noise that surrounds the digital world. New platforms appear, new tactics are promoted, and every few months there is a new formula for growth. Most of these ideas are short-lived.</p>
                         
                         <div class="market-reality-card">
-                            <p class="font-bold mb-4 italic text-lg dark:text-white">My work is guided by a simple belief: businesses should focus less on appearing successful and more on becoming sustainable.</p>
-                            <ul class="space-y-3 text-xs font-bold tracking-widest text-gray-400 uppercase">
-                                <li>• Understanding real market demand</li>
-                                <li>• Communicating value clearly</li>
-                                <li>• Building systems for consistent operations</li>
-                                <li>• Decisions based on long-term outcomes</li>
+                            <p class="font-bold mb-6 italic text-lg sm:text-xl dark:text-white leading-relaxed">My work is guided by a simple belief: businesses should focus less on appearing successful and more on becoming sustainable.</p>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[9px] sm:text-[10px] font-black tracking-[0.2em] text-secondary-text uppercase">
+                                <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span><span>Real market demand</span></li>
+                                <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span><span>Clarity in Value</span></li>
+                                <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span><span>Disciplined Systems</span></li>
+                                <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span><span>Long-term outcomes</span></li>
                             </ul>
                         </div>
                         
-                        <p class="text-gray-600 dark:text-gray-400">I believe the digital economy offers extraordinary opportunities, but only for those who approach it with patience, discipline, and practical thinking.</p>
+                        <p class="text-secondary-text text-base sm:text-lg">I believe the digital economy offers extraordinary opportunities, but only for those who approach it with patience, discipline, and practical thinking.</p>
                     </div>
                 </div>
             </div>
@@ -356,22 +466,26 @@
     <!-- 4. Areas of Work -->
     <section id="work">
         <div class="container-custom">
-            <div class="grid md:grid-cols-12 gap-8">
-                <div class="md:col-span-4">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12">
+                <div class="md:col-span-4 reveal">
                     <span class="sidebar-label">Focus Areas</span>
                 </div>
-                <div class="md:col-span-8 grid md:grid-cols-2 gap-10">
-                    <div>
-                        <h4 class="text-xl mb-3">Strategy & Positioning</h4>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Defining how a business operates within its market reality and aligning positioning with actual customer demand.</p>
+                <div class="md:col-span-8 grid sm:grid-cols-2 gap-0 border-t border-divider reveal">
+                    <div class="focus-card border-b sm:border-b sm:border-r">
+                        <h4 class="text-xl mb-4 text-gold transition-colors duration-300">Strategy & Positioning</h4>
+                        <p class="text-secondary-text text-sm leading-relaxed">Defining how a business operates within its market reality and aligning positioning with actual customer demand.</p>
                     </div>
-                    <div>
-                        <h4 class="text-xl mb-3">Marketing Systems</h4>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Designing communication frameworks that focus on clarity and value delivery rather than chasing short-term attention.</p>
+                    <div class="focus-card border-b sm:border-b">
+                        <h4 class="text-xl mb-4 text-gold transition-colors duration-300">Marketing Systems</h4>
+                        <p class="text-secondary-text text-sm leading-relaxed">Designing communication frameworks that focus on clarity and value delivery rather than chasing short-term attention.</p>
                     </div>
-                    <div>
-                        <h4 class="text-xl mb-3">Digital Infrastructure</h4>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Building the technical environment and workflows that support disciplined execution and consistent operations.</p>
+                    <div class="focus-card border-b sm:border-b-0 sm:border-r">
+                        <h4 class="text-xl mb-4 text-gold transition-colors duration-300">Digital Infrastructure</h4>
+                        <p class="text-secondary-text text-sm leading-relaxed">Building the technical environment and workflows that support disciplined execution and consistent operations.</p>
+                    </div>
+                    <div class="focus-card">
+                        <h4 class="text-xl mb-4 text-gold transition-colors duration-300">Business Intelligence</h4>
+                        <p class="text-secondary-text text-sm leading-relaxed">Understanding markets, customer behavior, and competitive signals to guide smarter decisions rather than relying on assumptions.</p>
                     </div>
                 </div>
             </div>
@@ -381,17 +495,20 @@
     <!-- 5. Insights -->
     <section id="insights">
         <div class="container-custom">
-            <div class="grid md:grid-cols-12 gap-8">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
                 <div class="md:col-span-4">
                     <span class="sidebar-label">Insights</span>
                 </div>
                 <div class="md:col-span-8">
-                    <h3 class="text-2xl md:text-3xl mb-6">Observations on business strategy, the digital economy, and the practicalities of modern marketing.</h3>
-                    <div class="flex flex-col space-y-6">
-                        <a href="https://khalidgraphy.com/subscribe" class="text-xl font-extrabold hover:text-gold transition-colors">Khalidgraphy Journal &rarr;</a>
-                        <div class="flex flex-wrap gap-4 pt-4">
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl mb-8">Observations on business strategy, the digital economy, and the practicalities of modern marketing.</h3>
+                    <div class="flex flex-col space-y-8">
+                        <a href="https://khalidgraphy.com/subscribe" class="text-xl sm:text-2xl font-extrabold hover:text-gold transition-colors inline-flex items-center group">
+                            Khalidgraphy Journal 
+                            <span class="ml-4 transform group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                        </a>
+                        <div class="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 pt-4">
                             <a href="https://khalidgraphy.com/subscribe" class="button">Subscribe to Newsletter</a>
-                            <a href="https://nas.io/khalidgraphy_" target="_blank" class="button-ghost text-sm">Join the Community</a>
+                            <a href="https://nas.io/khalidgraphy_" target="_blank" class="button-ghost text-center sm:text-left text-sm opacity-80 hover:opacity-100">Join the Community</a>
                         </div>
                     </div>
                 </div>
@@ -400,30 +517,30 @@
     </section>
 
     <!-- 6. Contact / Advisory -->
-    <section id="contact" class="border-none pb-16">
+    <section id="contact" class="border-none pb-20 sm:pb-24">
         <div class="container-custom">
-            <div class="grid md:grid-cols-12 gap-8">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
                 <div class="md:col-span-4">
                     <span class="sidebar-label">Advisory</span>
                 </div>
                 <div class="md:col-span-8">
-                    <h3 class="text-3xl mb-8">Seeking a practical, disciplined approach to growth in digital markets?</h3>
-                    <div class="grid sm:grid-cols-2 gap-10">
+                    <h3 class="text-3xl sm:text-4xl mb-10 sm:mb-12">Seeking a practical, disciplined approach to growth in digital markets?</h3>
+                    <div class="grid sm:grid-cols-2 gap-10 sm:gap-12">
                         <div>
-                            <span class="block text-[10px] uppercase tracking-widest text-gray-400 font-extrabold mb-3">Email</span>
-                            <a href="mailto:hello@khalidmir.com" class="text-lg font-bold hover:underline">hello@khalidmir.com</a>
+                            <span class="block text-[10px] uppercase tracking-[0.3em] text-secondary-text font-black mb-4">Direct Email</span>
+                            <a href="mailto:hello@khalidmir.com" class="text-lg sm:text-xl font-bold hover:text-gold transition-colors break-all">hello@khalidmir.com</a>
                         </div>
                         <div>
-                            <span class="block text-[10px] uppercase tracking-widest text-gray-400 font-extrabold mb-3">Connect</span>
-                            <div class="flex space-x-5">
-                                <a href="https://linkedin.com/in/Khalidgraphy" target="_blank" class="hover:text-gold transition-colors">
-                                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <span class="block text-[10px] uppercase tracking-[0.3em] text-secondary-text font-black mb-4">Network</span>
+                            <div class="flex space-x-6 sm:space-x-8">
+                                <a href="https://linkedin.com/in/Khalidgraphy" target="_blank" aria-label="LinkedIn" class="text-secondary-text hover:text-gold transition-all duration-300">
+                                    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                                 </a>
-                                <a href="https://youtube.com/@Khalidgraphy" target="_blank" class="hover:text-gold transition-colors">
-                                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                <a href="https://youtube.com/@Khalidgraphy" target="_blank" aria-label="YouTube" class="text-secondary-text hover:text-gold transition-all duration-300">
+                                    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                                 </a>
-                                <a href="https://facebook.com/Khalidgraphy" target="_blank" class="hover:text-gold transition-colors">
-                                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                <a href="https://facebook.com/Khalidgraphy" target="_blank" aria-label="Facebook" class="text-secondary-text hover:text-gold transition-all duration-300">
+                                    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                                 </a>
                             </div>
                         </div>
@@ -434,14 +551,24 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-divider">
-        <div class="container-custom flex flex-col md:flex-row justify-between items-center text-[11px] text-gray-400 uppercase tracking-widest font-bold">
-            <div class="flex items-center space-x-2">
-                <span>© <span id="currentYear"></span> Khalid Hussain Mir</span>
+    <footer class="pt-12 pb-12 bg-navy-900 border-t border-divider">
+        <div class="container-custom">
+            <div class="mb-8 opacity-50 text-[10px] uppercase tracking-widest font-bold text-center sm:text-left">
+                Independent advisory on strategy, marketing, and digital markets.
             </div>
-            <div class="mt-4 md:mt-0 flex space-x-6">
-                <a href="https://linktr.ee/khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Linktree</a>
-                <span>Powered by <a href="#" class="text-primary-text hover:text-gold transition-colors">Kreative Minds</a></span>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[11px] text-secondary-text uppercase tracking-[0.2em] font-bold gap-6">
+                <div class="flex items-center space-x-2">
+                    <span>© <span id="currentYear"></span> Khalid Hussain Mir</span>
+                </div>
+                <div class="flex flex-wrap justify-center sm:justify-end items-center gap-x-8 gap-y-4">
+                    <a href="https://linktr.ee/khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Digital Ecosystem</a>
+                    <span>Powered by <a href="#" class="text-primary-text hover:text-gold transition-colors">Kreative Minds</a></span>
+                </div>
+            </div>
+            
+            <!-- Updated Disclaimer Line: No All-Caps, One line on laptop -->
+            <div class="mt-10 opacity-40 text-[10px] font-bold text-center lg:text-left italic leading-relaxed w-full lg:whitespace-nowrap">
+                This website is not affiliated with, endorsed by, or sponsored by Facebook, Instagram, Meta Platforms, Google LLC, or any of their associated companies.
             </div>
         </div>
     </footer>
@@ -456,14 +583,10 @@
             if (html.classList.contains('dark')) {
                 html.classList.remove('dark');
                 html.classList.add('light');
-                document.body.classList.remove('dark');
-                document.body.classList.add('light');
                 localStorage.setItem('theme', 'light');
             } else {
                 html.classList.remove('light');
                 html.classList.add('dark');
-                document.body.classList.remove('light');
-                document.body.classList.add('dark');
                 localStorage.setItem('theme', 'dark');
             }
         }
@@ -471,17 +594,13 @@
         themeToggle.addEventListener('click', toggleTheme);
         themeToggleMobile.addEventListener('click', toggleTheme);
 
-        // Load theme: Default to dark if nothing is saved
+        // Load theme: Default to dark
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'light') {
             html.classList.remove('dark');
             html.classList.add('light');
-            document.body.classList.remove('dark');
-            document.body.classList.add('light');
         } else {
-            // Default behavior (Dark)
             html.classList.add('dark');
-            document.body.classList.add('dark');
         }
 
         // Dynamic Year
@@ -490,7 +609,7 @@
         // Nav Scroll Effect
         const nav = document.getElementById('mainNav');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 40) {
                 nav.classList.add('scrolled');
             } else {
                 nav.classList.remove('scrolled');
@@ -504,13 +623,36 @@
         const mobileLinks = document.querySelectorAll('.mobile-link');
 
         function toggleMenu() {
-            mobileMenu.classList.toggle('hidden');
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            if (isOpen) {
+                mobileMenu.classList.remove('show');
+                setTimeout(() => mobileMenu.classList.add('hidden'), 400);
+            } else {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => mobileMenu.classList.add('show'), 10);
+            }
             document.body.classList.toggle('overflow-hidden');
         }
 
         menuBtn.addEventListener('click', toggleMenu);
         closeBtn.addEventListener('click', toggleMenu);
         mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+        // Viewport Reveal Animation
+        const revealCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const revealObserver = new IntersectionObserver(revealCallback, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     </script>
 </body>
 </html>
