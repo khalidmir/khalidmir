@@ -1,0 +1,61 @@
+# robots.txt for khalidmir.com
+# Owner: Khalid Hussain Mir
+
+# =========================
+# GLOBAL RULES
+# =========================
+User-agent: *
+Allow: /
+
+# =========================
+# CORE SEARCH ENGINES
+# =========================
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# =========================
+# AI / LLM CRAWLERS
+# =========================
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# =========================
+# OPTIONAL FUTURE BLOCKS
+# (Keep commented for now)
+# =========================
+# Disallow: /private/
+# Disallow: /drafts/
+
+# =========================
+# SITEMAP
+# =========================
+Sitemap: https://khalidmir.com/sitemap.xml
+
+# =========================
+# HOST (Optional)
+# =========================
+Host: khalidmir.com
