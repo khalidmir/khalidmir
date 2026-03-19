@@ -1,13 +1,23 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ7P70SGYF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EZ7P70SGYF');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khalid Mir | Marketing & Business Advisor | Digital Strategist </title>
     
     <!-- SEO / AIEO Metadata -->
     <meta name="description" content="Khalid Hussain Mir (Khalidgraphy) - Marketing & Business Advisor and Digital Strategist. Helping businesses navigate digital markets through strategy, marketing, and real-world execution.">
-    <meta name="keywords" content="Khalid Hussain Mir, Khalidgraphy, Business Advisor, Marketing Strategy, Dubai Digital Makreting, Business Systems, UAE Business Consultant, entrepreneur from Quetta, Balochistan">
+    <meta name="keywords" content="Khalid Hussain Mir, Khalidgraphy, Business Advisor, Marketing Strategy, Dubai Digital Marketing, Business Systems, UAE Business Consultant, entrepreneur from Quetta, Balochistan">
     <meta property="og:title" content="Khalid Mir | Marketing & Business Advisor | Khalidgraphy">
     <meta property="og:description" content="Moving businesses from scattered efforts to structured execution. Strategy. Marketing. Execution.">
     <meta property="og:type" content="website">
@@ -109,7 +119,6 @@
             padding: 0 1.5rem;
         }
 
-        /* Glass Nav */
         nav {
             background: transparent;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -141,7 +150,6 @@
             color: var(--gold) !important;
         }
 
-        /* Focus Area Cards */
         .focus-card {
             padding: 2rem;
             background: transparent;
@@ -159,11 +167,6 @@
             }
         }
 
-        .focus-card:hover h4 {
-            color: var(--gold);
-        }
-
-        /* Profile Architectural Frame */
         .profile-wrapper {
             position: relative;
             display: inline-block;
@@ -186,20 +189,6 @@
             transform: translate(6px, 6px);
             transition: all 0.5s ease;
             z-index: 0;
-        }
-
-        @media (min-width: 768px) {
-            .profile-wrapper::before { transform: translate(8px, 8px); }
-        }
-
-        .profile-wrapper::after {
-            content: '';
-            position: absolute;
-            inset: -20px;
-            background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
-            z-index: -1;
-            border-radius: 50%;
-            opacity: 0.6;
         }
 
         .profile-wrapper:hover::before {
@@ -240,11 +229,6 @@
             background: rgba(255, 215, 0, 0.02);
         }
 
-        @media (min-width: 768px) {
-            .market-reality-card { padding-left: 2rem; margin: 3rem 0; }
-        }
-
-        /* Buttons */
         .button {
             display: inline-block;
             border: 1px solid var(--primary-text);
@@ -259,10 +243,6 @@
             text-align: center;
         }
 
-        @media (min-width: 768px) {
-            .button { padding: 12px 28px; }
-        }
-
         .button:hover {
             background: var(--gold);
             border-color: var(--gold);
@@ -270,7 +250,6 @@
             transform: translateY(-2px);
         }
 
-        /* Fade-in Animations */
         .reveal {
             opacity: 0;
             transform: translateY(20px);
@@ -282,7 +261,6 @@
             transform: translateY(0);
         }
 
-        /* Hero Intro Divider */
         .hero-divider {
             height: 1px;
             width: 100%;
@@ -292,7 +270,6 @@
             opacity: 0.3;
         }
 
-        /* Mobile Menu Animation */
         #mobileMenu {
             transition: opacity 0.4s ease, transform 0.4s ease;
             opacity: 0;
@@ -331,18 +308,20 @@
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png" 
                      alt="Khalid Logo" class="nav-logo h-8 w-8 sm:h-10 sm:w-10 rounded-full border border-navy-700">
                 <div class="flex flex-col">
-                    <a href="#" class="font-extrabold tracking-tight text-base sm:text-lg uppercase leading-none">Khalid Mir</a>
+                    <a href="index.html" class="font-extrabold tracking-tight text-base sm:text-lg uppercase leading-none">Khalid Mir</a>
                     <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-secondary-text font-medium mt-1">Marketing & Business Advisor</span>
                 </div>
             </div>
             
-            <div class="hidden md:flex items-center space-x-8 lg:space-x-10">
-                <a href="#about" class="nav-link">Home</a>
-                <a href="#philosophy" class="nav-link">Thinking</a>
-                <a href="#work" class="nav-link">Work</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                <a href="index.html" class="nav-link text-gold">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="advisory.html" class="nav-link">Advisory</a>
+                <a href="markets.html" class="nav-link">Markets</a>
                 
-                <button id="themeToggle" aria-label="Toggle Theme" class="text-secondary-text hover:text-gold transition-colors">
+                <a href="https://linktr.ee/Khalidgraphy" target="_blank" class="button px-4 py-2 text-[11px] uppercase tracking-widest font-bold">Let's Connect</a>
+
+                <button id="themeToggle" aria-label="Toggle Theme" class="ml-2 text-secondary-text hover:text-gold transition-colors">
                     <svg id="sunIcon" class="hidden dark:block" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                     <svg id="moonIcon" class="block dark:hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 </button>
@@ -365,10 +344,11 @@
         <button class="absolute top-8 right-8 p-2" id="closeBtn">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
-        <a href="#about" class="mobile-link font-bold tracking-tight">Home</a>
-        <a href="#philosophy" class="mobile-link font-bold tracking-tight">Thinking</a>
-        <a href="#work" class="mobile-link font-bold tracking-tight">Areas of Work</a>
-        <a href="#contact" class="mobile-link font-bold tracking-tight">Advisory</a>
+        <a href="index.html" class="mobile-link font-bold tracking-tight text-gold">Home</a>
+        <a href="about.html" class="mobile-link font-bold tracking-tight">About</a>
+        <a href="advisory.html" class="mobile-link font-bold tracking-tight">Advisory</a>
+        <a href="markets.html" class="mobile-link font-bold tracking-tight">Markets</a>
+        <a href="https://linktr.ee/Khalidgraphy" target="_blank" class="mobile-link font-bold text-gold uppercase tracking-widest text-sm">Let's Connect &rarr;</a>
     </div>
 
     <!-- Hero Divider -->
@@ -395,13 +375,13 @@
 
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6">
                         <a href="https://khalidgraphy.com/subscribe" class="button">Explore Insights</a>
-                        <a href="#contact" class="button-ghost text-center sm:text-left border-b border-transparent hover:border-gold transition-all duration-300">Work With Me</a>
+                        <a href="https://linktr.ee/Khalidgraphy" target="_blank" class="button-ghost text-center sm:text-left border-b border-transparent hover:border-gold transition-all duration-300">Let's Connect</a>
                     </div>
                 </div>
                 <div class="md:col-span-5 flex justify-center md:justify-end reveal mt-12 md:mt-0" style="transition-delay: 200ms;">
                     <div class="profile-wrapper">
                         <div class="profile-img-container">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlTm6EmTNPC9RrQshGLEMZjDwDXuhmoISOa8h9Zf9HFqIAC9gmaZ1L-ExRSAjIHyVCal2eAul8wbz2_iTHRURXvqZLQceqVIm9TjqPC_COy0L9XRjW5x2MqQIiCq31WAeOKLaklo8Si9NKK89AeDvErxvdFfvZfWgtB8DEoGn7oHQlQ0ZkkfpA7NKiK4Q/s320/Khalid%2024.png" 
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png" 
                                  alt="Khalid Hussain Mir" class="profile-img grayscale">
                         </div>
                     </div>
@@ -427,6 +407,9 @@
                             <p>
                                 My work is grounded in observation, experience, and the realities of how businesses actually operate. Instead of chasing every new platform or trend, I focus on helping organizations build systems that support sustainable business growth.
                             </p>
+                        </div>
+                        <div class="pt-4">
+                            <a href="about.html" class="button-ghost border-b border-gold pb-1 font-bold">Read the Story &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -566,7 +549,6 @@
                 </div>
             </div>
             
-            <!-- Updated Disclaimer Line: No All-Caps, One line on laptop -->
             <div class="mt-10 opacity-40 text-[10px] font-bold text-center lg:text-left italic leading-relaxed w-full lg:whitespace-nowrap">
                 This website is not affiliated with, endorsed by, or sponsored by Facebook, Instagram, Meta Platforms, Google LLC, or any of their associated companies.
             </div>
@@ -574,7 +556,6 @@
     </footer>
 
     <script>
-        // Theme Management
         const html = document.documentElement;
         const themeToggle = document.getElementById('themeToggle');
         const themeToggleMobile = document.getElementById('themeToggleMobile');
@@ -594,7 +575,6 @@
         themeToggle.addEventListener('click', toggleTheme);
         themeToggleMobile.addEventListener('click', toggleTheme);
 
-        // Load theme: Default to dark
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'light') {
             html.classList.remove('dark');
@@ -603,10 +583,8 @@
             html.classList.add('dark');
         }
 
-        // Dynamic Year
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // Nav Scroll Effect
         const nav = document.getElementById('mainNav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 40) {
@@ -616,7 +594,6 @@
             }
         });
 
-        // Mobile Menu
         const menuBtn = document.getElementById('menuBtn');
         const closeBtn = document.getElementById('closeBtn');
         const mobileMenu = document.getElementById('mobileMenu');
@@ -638,7 +615,6 @@
         closeBtn.addEventListener('click', toggleMenu);
         mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
 
-        // Viewport Reveal Animation
         const revealCallback = (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
