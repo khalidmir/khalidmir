@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalid Mir | About | Marketing & Business Advisor</title>
+    
+    <!-- SEO / AIEO Metadata -->
+    <meta name="description" content="Khalid Hussain Mir (Khalidgraphy) is a Marketing and Business Advisor and Digital Strategist. His work focuses on digital market behavior, business systems, and sustainable growth.">
+    <meta name="keywords" content="Khalid Hussain Mir, Khalidgraphy, Business Advisor, Marketing Strategy, Digital Strategist, Business Systems, Dubai Business Consultant">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#FFD700',
+                        navy: {
+                            900: '#0b1220',
+                            800: '#0f172a',
+                            700: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-alt: #fafafa;
+            --primary-text: #111111;
+            --secondary-text: #555555;
+            --divider: #f3f4f6;
+            --gold: #FFD700;
+        }
+
+        .dark, :root {
+            --bg: #0b1220;
+            --bg-alt: #0f172a;
+            --primary-text: #f9f9f9;
+            --secondary-text: #94a3b8;
+            --divider: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--primary-text);
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        @media (min-width: 768px) {
+            body { font-size: 17px; }
+        }
+
+        h1, .h1-style {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            color: var(--primary-text);
+            line-height: 1.15;
+        }
+
+        h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--primary-text);
+            line-height: 1.3;
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--divider);
+        }
+
+        @media (min-width: 1024px) {
+            section { padding: 6rem 0; }
+        }
+
+        .container-custom {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        nav {
+            background: transparent;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 80px;
+        }
+
+        @media (min-width: 1024px) {
+            nav { height: 90px; }
+        }
+
+        nav.scrolled {
+            height: 70px;
+            background: rgba(11, 18, 32, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--divider);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+        }
+
+        .nav-link {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--secondary-text);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--gold) !important;
+        }
+
+        .sidebar-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: var(--gold);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .hero-divider {
+            height: 1px;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: linear-gradient(90deg, transparent, var(--divider), transparent);
+            opacity: 0.3;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .expertise-item {
+            display: flex;
+            align-items: center;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--divider);
+            transition: all 0.3s ease;
+        }
+
+        .expertise-item:hover {
+            padding-left: 0.5rem;
+            background: rgba(255, 215, 0, 0.03);
+            border-bottom-color: var(--gold);
+        }
+
+        .expertise-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--gold);
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .expertise-item:hover .expertise-dot {
+            transform: scale(1.5);
+            box-shadow: 0 0 10px var(--gold);
+        }
+
+        .text-link {
+            color: var(--primary-text);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-color: var(--divider);
+            transition: all 0.3s ease;
+        }
+
+        .text-link:hover {
+            color: var(--gold);
+            text-decoration-color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .h1-style { font-size: 1.875rem !important; }
+        }
+    </style>
+</head>
+<body class="dark">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 flex items-center" id="mainNav">
+        <div class="container-custom w-full flex items-center justify-between">
+            <div class="flex items-center space-x-3 sm:space-x-4">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png" 
+                     alt="Khalid Logo" class="nav-logo h-8 w-8 sm:h-10 sm:w-10 rounded-full border border-navy-700">
+                <div class="flex flex-col">
+                    <a href="index.html" class="font-extrabold tracking-tight text-base sm:text-lg uppercase leading-none hover:text-gold transition-colors">Khalid Mir</a>
+                    <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-secondary-text font-medium mt-1">Marketing & Business Advisor</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8 lg:space-x-10">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link text-gold">About</a>
+                <a href="index.html#work" class="nav-link">Work</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                
+                <button id="themeToggle" aria-label="Toggle Theme" class="text-secondary-text hover:text-gold transition-colors">
+                    <svg id="sunIcon" class="hidden dark:block" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg id="moonIcon" class="block dark:hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </div>
+
+            <div class="flex items-center md:hidden space-x-3">
+                <button id="menuBtn" class="text-primary-text p-2 hover:text-gold transition-colors">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16M4 16h16"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu" class="fixed inset-0 bg-navy-900 z-[60] flex flex-col items-center justify-center space-y-8 text-2xl hidden opacity-0 transition-opacity duration-400">
+        <button class="absolute top-8 right-8 p-2" id="closeBtn">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="index.html" class="mobile-link font-bold tracking-tight">Home</a>
+        <a href="about.html" class="mobile-link font-bold tracking-tight text-gold">About</a>
+        <a href="index.html#work" class="mobile-link font-bold tracking-tight">Work</a>
+        <a href="index.html#contact" class="mobile-link font-bold tracking-tight">Contact</a>
+    </div>
+
+    <!-- Hero Divider -->
+    <div class="hero-divider mt-20 sm:mt-24"></div>
+
+    <!-- 1. Hero -->
+    <header class="pt-16 sm:pt-24 pb-12 sm:pb-20 border-b border-divider">
+        <div class="container-custom">
+            <div class="max-w-4xl reveal">
+                <h1 class="h1-style text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-10 leading-[1.1]">
+                    About Khalid Mir | <span class="text-gold">Khalidgraphy</span>
+                </h1>
+                <p class="text-lg sm:text-2xl text-secondary-text font-medium leading-relaxed tracking-tight">
+                    Khalid Hussain Mir (aka; <a href="https://khalidgraphy.com" target="_blank" class="text-gold hover:underline decoration-gold underline-offset-4">Khalidgraphy</a>) is a Marketing and Business Advisor and Digital Strategist. His work focuses on how digital markets behave and how businesses build sustainable revenue systems.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Background -->
+    <section id="background">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Background</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-8 text-secondary-text text-base sm:text-lg">
+                        <p>
+                            Khalid began his journey from <a href="https://en.wikipedia.org/wiki/Usta_Muhammad_District" target="_blank" class="text-link">Usta Muhammad</a>, a small town in Balochistan. He later moved to <a href="https://en.wikipedia.org/wiki/Quetta" target="_blank" class="text-link">Quetta</a> (capital of Balochsitan state), then Islamabad (Capital of Pak), gaining exposure to different layers of Pakistan’s business and digital environment.
+                        </p>
+                        <p>
+                            Over time, his work expanded beyond local markets, leading him to Dubai, where he now operates as a digital nomad, working with businesses across regions.
+                        </p>
+                        <p class="text-primary-text font-medium border-l-2 border-gold pl-6 py-2">
+                            This journey from a remote town to international markets shapes his perspective. It is grounded, practical, and focused on how businesses actually function in real conditions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Expertise -->
+    <section id="capabilities" class="bg-navy-800">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Capabilities</span>
+                </div>
+                <div class="md:col-span-8">
+                    <h3 class="text-2xl sm:text-3xl mb-10">What He Knows & Does</h3>
+                    <div class="grid gap-2">
+                        <div class="expertise-item">
+                            <div class="expertise-dot"></div>
+                            <span class="text-lg">Digital market behavior</span>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-dot"></div>
+                            <span class="text-lg">How businesses generate and sustain revenue</span>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-dot"></div>
+                            <span class="text-lg">Customer acquisition and retention systems</span>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-dot"></div>
+                            <span class="text-lg">Operational structures behind profitable companies</span>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-dot"></div>
+                            <span class="text-lg">Market differences between emerging and developed economies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Approach -->
+    <section id="approach">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Approach</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-8">
+                        <h3 class="text-2xl sm:text-4xl">Most businesses focus on tactics. Platforms. Short-term visibility.</h3>
+                        <p class="text-xl text-gold font-bold">His approach is different.</p>
+                        <div class="text-secondary-text text-base sm:text-lg space-y-6">
+                            <p>
+                                He focuses on structure. How a business is positioned, how it operates, and how it converts effort into revenue.
+                            </p>
+                            <p class="text-primary-text font-semibold text-xl">
+                                The goal is not activity. The goal is outcomes.
+                            </p>
+                        </div>
+                        <div class="pt-8 text-secondary-text italic text-base sm:text-lg border-t border-divider">
+                            His work is built on observation, execution, and market reality. Not trends. Not hype.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-12 pb-12 bg-navy-900 border-t border-divider">
+        <div class="container-custom">
+            <div class="mb-8 opacity-50 text-[10px] uppercase tracking-widest font-bold text-center sm:text-left">
+                Independent advisory on strategy, marketing, and digital markets.
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[11px] text-secondary-text uppercase tracking-[0.2em] font-bold gap-6">
+                <div class="flex items-center space-x-2">
+                    <span>© <span id="currentYear"></span> Khalid Hussain Mir</span>
+                </div>
+                <div class="flex flex-wrap justify-center sm:justify-end items-center gap-x-8 gap-y-4">
+                    <a href="https://linktr.ee/khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Digital Ecosystem</a>
+                    <span>Powered by <a href="#" class="text-primary-text hover:text-gold transition-colors">Kreative Minds</a></span>
+                </div>
+            </div>
+            <div class="mt-10 opacity-40 text-[10px] font-bold text-center lg:text-left italic leading-relaxed w-full lg:whitespace-nowrap">
+                This website is not affiliated with, endorsed by, or sponsored by Facebook, Instagram, Meta Platforms, Google LLC, or any of their associated companies.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const html = document.documentElement;
+        
+        // Theme Management
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            html.classList.remove('dark');
+            html.classList.add('light');
+        } else {
+            html.classList.add('dark');
+        }
+
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                html.classList.add('light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.remove('light');
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Dynamic Year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Nav Scroll Effect
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        // Mobile Menu
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        function toggleMenu() {
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            if (isOpen) {
+                mobileMenu.classList.remove('opacity-100');
+                setTimeout(() => mobileMenu.classList.add('hidden'), 400);
+            } else {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => mobileMenu.classList.add('opacity-100'), 10);
+            }
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+
+        // Viewport Reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>
