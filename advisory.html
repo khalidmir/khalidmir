@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA | Marketing & Business Advisory | Khalid Hussain Mir</title>
+    
+    <!-- SEO / AIEO Metadata -->
+    <meta name="description" content="Marketing and Business Advisory focused on real market behavior, customer understanding, and practical execution. A grounded approach to building businesses that make money.">
+    <meta name="keywords" content="Khalid Hussain Mir, Marketing Advisory, Business Strategy, Digital Strategist, MBA, Marketing and Business Advisory, Dubai Business Consultant">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#FFD700',
+                        navy: {
+                            900: '#0b1220',
+                            800: '#0f172a',
+                            700: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --primary-text: #111111;
+            --secondary-text: #555555;
+            --divider: #f3f4f6;
+            --gold: #FFD700;
+        }
+
+        .dark, :root {
+            --bg: #0b1220;
+            --bg-alt: #0f172a;
+            --primary-text: #f9f9f9;
+            --secondary-text: #94a3b8;
+            --divider: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--primary-text);
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        @media (min-width: 768px) {
+            body { font-size: 17px; }
+        }
+
+        h1, .h1-style {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            color: var(--primary-text);
+        }
+
+        h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--primary-text);
+            line-height: 1.3;
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--divider);
+        }
+
+        @media (min-width: 1024px) {
+            section { padding: 6rem 0; }
+        }
+
+        .container-custom {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: transparent;
+            transition: all 0.5s ease;
+            height: 80px;
+        }
+
+        nav.scrolled {
+            height: 70px;
+            background: rgba(11, 18, 32, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--divider);
+        }
+
+        .nav-link {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--secondary-text);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--gold) !important;
+        }
+
+        .sidebar-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: var(--gold);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .hero-divider {
+            height: 1px;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: linear-gradient(90deg, transparent, var(--divider), transparent);
+            opacity: 0.3;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reality-card {
+            border-left: 2px solid var(--gold);
+            padding: 2.5rem;
+            background: rgba(255, 215, 0, 0.02);
+            margin: 2rem 0;
+        }
+
+        .list-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .list-item {
+            padding: 1.5rem;
+            border: 1px solid var(--divider);
+            transition: all 0.3s ease;
+        }
+
+        .list-item:hover {
+            border-color: var(--gold);
+            background: var(--bg-alt);
+            transform: translateY(-5px);
+        }
+
+        .button {
+            display: inline-block;
+            border: 1px solid var(--primary-text);
+            padding: 14px 32px;
+            background: transparent;
+            color: var(--primary-text);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+
+        .button:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: #0b1220 !important;
+        }
+
+        @media (max-width: 768px) {
+            .h1-style { font-size: 3rem !important; }
+        }
+    </style>
+</head>
+<body class="dark">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 flex items-center" id="mainNav">
+        <div class="container-custom w-full flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png" 
+                     alt="Khalid Logo" class="nav-logo h-10 w-10 rounded-full border border-navy-700">
+                <div class="flex flex-col">
+                    <a href="index.html" class="font-extrabold tracking-tight text-lg uppercase leading-none">Khalid Mir</a>
+                    <span class="text-[9px] uppercase tracking-[0.2em] text-secondary-text font-medium mt-1">Marketing & Business Advisor</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-10">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="advisory.html" class="nav-link text-gold">Advisory</a>
+                <a href="index.html#work" class="nav-link">Work</a>
+                
+                <button id="themeToggle" aria-label="Toggle Theme" class="text-secondary-text hover:text-gold transition-colors">
+                    <svg id="sunIcon" class="hidden dark:block" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg id="moonIcon" class="block dark:hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </div>
+
+            <div class="flex items-center md:hidden space-x-3">
+                <button id="menuBtn" class="text-primary-text p-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16M4 16h16"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu" class="fixed inset-0 bg-navy-900 z-[60] flex flex-col items-center justify-center space-y-8 text-2xl hidden opacity-0 transition-opacity duration-400">
+        <button class="absolute top-8 right-8 p-2" id="closeBtn">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="index.html" class="mobile-link font-bold tracking-tight">Home</a>
+        <a href="about.html" class="mobile-link font-bold tracking-tight">About</a>
+        <a href="advisory.html" class="mobile-link font-bold tracking-tight text-gold">Advisory</a>
+        <a href="index.html#work" class="mobile-link font-bold tracking-tight">Work</a>
+    </div>
+
+    <!-- Hero Divider -->
+    <div class="hero-divider mt-24"></div>
+
+    <!-- 1. Hero -->
+    <header class="pt-16 sm:pt-24 pb-12 sm:pb-20 border-b border-divider">
+        <div class="container-custom">
+            <div class="max-w-4xl reveal">
+                <h1 class="h1-style text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 leading-none">
+                    <span class="text-gold">MBA</span>
+                </h1>
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-[0.2em] mb-12 opacity-80">
+                    Marketing & Business Advisory
+                </h2>
+                <p class="text-lg sm:text-2xl text-secondary-text font-medium leading-relaxed max-w-2xl">
+                    Most businesses believe they need better marketing. Many believe they need better structure. In reality, they need better understanding.
+                </p>
+                <p class="text-lg sm:text-xl text-primary-text mt-8 font-semibold italic">
+                    Understanding of people, demand, and how buying decisions actually happen.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Definition -->
+    <section>
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Concept</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-8">
+                        <h3 class="text-2xl sm:text-3xl">What This MBA Means</h3>
+                        <div class="text-secondary-text text-lg space-y-6">
+                            <p>MBA here is not an educational degree.</p>
+                            <p>It stands for <span class="text-primary-text font-bold">"Marketing and Business Advisory"</span>—what is actually required to make money.</p>
+                            <p>A practical approach to understanding how business works in real markets, not how it is explained in theory.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Practical Reality -->
+    <section class="bg-navy-800">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Reality</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-8">
+                        <h3 class="text-2xl sm:text-4xl">Business does not start with theoretical systems only. It starts with people.</h3>
+                        <div class="reality-card">
+                            <p class="text-xl font-medium leading-relaxed italic">
+                                If you understand what people want, why they buy, and how they decide, you can make money even with simple setups. If you do not understand this, even the best structure will not help.
+                            </p>
+                        </div>
+                        <p class="text-secondary-text text-lg">
+                            This is where many businesses struggle. They build systems and structure before they understand demand and their customers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. What I Do -->
+    <section>
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Methodology</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-8">
+                        <h3 class="text-2xl sm:text-3xl">What I Do</h3>
+                        <p class="text-lg text-secondary-text">I work with founders and businesses to understand their real situation.</p>
+                        <ul class="grid sm:grid-cols-2 gap-4 text-sm font-bold tracking-wider uppercase text-gold">
+                            <li class="p-4 border border-divider">Who is your customer?</li>
+                            <li class="p-4 border border-divider">Why aren't they buying?</li>
+                            <li class="p-4 border border-divider">Is the offer unclear?</li>
+                            <li class="p-4 border border-divider">Where is the friction?</li>
+                        </ul>
+                        <p class="text-xl font-medium pt-4">
+                            Make the business easier to understand, easier to trust, and easier to buy from. Make it for the people at their own level of understanding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Help Areas -->
+    <section class="bg-navy-800">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Help Areas</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="list-grid">
+                        <div class="list-item">
+                            <h4 class="text-xl mb-4 text-gold">Clarifying Demand</h4>
+                            <p class="text-sm text-secondary-text">Identifying the real customer and the actual market demand.</p>
+                        </div>
+                        <div class="list-item">
+                            <h4 class="text-xl mb-4 text-gold">Offer Engineering</h4>
+                            <p class="text-sm text-secondary-text">Fixing confusing or weak offers to ensure they convert effort into revenue.</p>
+                        </div>
+                        <div class="list-item">
+                            <h4 class="text-xl mb-4 text-gold">Value Communication</h4>
+                            <p class="text-sm text-secondary-text">Improving how value is communicated to the end consumer.</p>
+                        </div>
+                        <div class="list-item">
+                            <h4 class="text-xl mb-4 text-gold">Friction Removal</h4>
+                            <p class="text-sm text-secondary-text">Removing obstacles in the buying decision process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Grounded Perspective -->
+    <section>
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Tone</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-8">
+                        <h3 class="text-2xl sm:text-3xl">Grounded Perspective</h3>
+                        <p class="text-secondary-text text-lg">My approach comes from observing how business actually happens in the real world.</p>
+                        <p class="text-3xl font-bold tracking-tighter">In simple terms, what many would call <span class="text-gold">“dhanda”</span>.</p>
+                        <p class="text-secondary-text text-lg">It is less about presentation, and more about outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Target Audience -->
+    <section class="bg-navy-800">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">For Whom</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[10px] font-black tracking-[0.2em] text-secondary-text uppercase">
+                        <div class="flex items-center space-x-3"><span class="w-2 h-2 bg-gold"></span><span>Aspiring Entrepreneurs</span></div>
+                        <div class="flex items-center space-x-3"><span class="w-2 h-2 bg-gold"></span><span>Active Business Owners</span></div>
+                        <div class="flex items-center space-x-3"><span class="w-2 h-2 bg-gold"></span><span>Founders with inconsistent sales</span></div>
+                        <div class="flex items-center space-x-3"><span class="w-2 h-2 bg-gold"></span><span>Struggling Execution Teams</span></div>
+                        <div class="flex items-center space-x-3"><span class="w-2 h-2 bg-gold"></span><span>Clarity Seekers</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Advisory CTA -->
+    <section id="contact" class="border-none pb-24">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Contact</span>
+                </div>
+                <div class="md:col-span-8">
+                    <h3 class="text-3xl sm:text-4xl mb-12">If you are serious about understanding your business and making it work, reach out.</h3>
+                    <a href="mailto:hello@khalidmir.com" class="button mb-8">hello@khalidmir.com</a>
+                    <p class="text-secondary-text italic mt-8 border-t border-divider pt-8">
+                        There are no fixed frameworks. Each business is different. The work stays practical and focused on what actually moves the needle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-12 pb-12 bg-navy-900 border-t border-divider">
+        <div class="container-custom text-center sm:text-left">
+            <div class="mb-8 opacity-50 text-[10px] uppercase tracking-widest font-bold">
+                Independent advisory on strategy, marketing, and digital markets.
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[11px] text-secondary-text uppercase tracking-[0.2em] font-bold gap-6">
+                <span>© <span id="currentYear"></span> Khalid Hussain Mir</span>
+                <div class="flex flex-wrap justify-center sm:justify-end gap-x-8 gap-y-4">
+                    <a href="https://linktr.ee/khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Digital Ecosystem</a>
+                    <span>Powered by <a href="#" class="text-primary-text hover:text-gold transition-colors">Kreative Minds</a></span>
+                </div>
+            </div>
+            <div class="mt-10 opacity-40 text-[10px] font-bold italic leading-relaxed w-full lg:whitespace-nowrap">
+                This website is not affiliated with, endorsed by, or sponsored by Facebook, Instagram, Meta Platforms, Google LLC, or any of their associated companies.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const html = document.documentElement;
+        
+        // Theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            html.classList.remove('dark');
+            html.classList.add('light');
+        } else {
+            html.classList.add('dark');
+        }
+
+        // Year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Nav
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        // Mobile Menu
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        function toggleMenu() {
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            if (isOpen) {
+                mobileMenu.classList.remove('opacity-100');
+                setTimeout(() => mobileMenu.classList.add('hidden'), 400);
+            } else {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => mobileMenu.classList.add('opacity-100'), 10);
+            }
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+
+        // Animations
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>
