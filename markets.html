@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ7P70SGYF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EZ7P70SGYF');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Markets | Khalid Hussain Mir</title>
+    <title>Digital Markets | Khalid Hussain Mir | Market Behavior Analyst</title>
     
-    <!-- SEO / AIEO Metadata -->
-    <meta name="description" content="Insights on how digital markets behave, how customers think, and how businesses make money across different environments.">
-    <meta name="keywords" content="Khalid Hussain Mir, Digital Markets, Market Behavior, Consumer Psychology, Business Strategy, Dubai Strategist">
+    <link rel="canonical" href="https://khalidmir.com/markets.html" />
+
+    <!-- SEO / AIEO / GEO Metadata -->
+    <meta name="description" content="Insights on how digital markets behave, how customers think, and how businesses make money across different environments. Grounded market analysis by Khalid Mir.">
+    <meta name="keywords" content="Khalid Hussain Mir, Digital Markets, Market Behavior, Consumer Psychology, Business Strategy, Dubai Strategist, UAE Business Insights">
+    <meta name="author" content="Khalid Hussain Mir">
+    <meta name="geo.region" content="AE-DU" />
+    <meta name="geo.placename" content="Dubai" />
     
+    <!-- Advanced Schema.org Metadata (AIEO/GEO Boost) -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://khalidmir.com/#person",
+        "name": "Khalid Hussain Mir",
+        "alternateName": "Khalidgraphy",
+        "url": "https://khalidmir.com",
+        "jobTitle": "Marketing and Business Advisor",
+        "description": "Studies how digital markets behave and how businesses build sustainable revenue systems.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dubai",
+          "addressCountry": "AE"
+        },
+        "sameAs": [
+          "https://linkedin.com/in/Khalidgraphy",
+          "https://youtube.com/@Khalidgraphy",
+          "https://facebook.com/Khalidgraphy"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ConsultingService",
+        "name": "Market Behavior Analysis",
+        "provider": { "@id": "https://khalidmir.com/#person" },
+        "description": "Analysis of customer behavior, decision-making patterns, and market realities across emerging and developed digital economies.",
+        "areaServed": "Global"
+      }
+    ]
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png">
 
@@ -188,6 +237,27 @@
             flex-shrink: 0;
         }
 
+        .button {
+            display: inline-block;
+            border: 1px solid var(--primary-text);
+            padding: 12px 24px;
+            background: transparent;
+            color: var(--primary-text);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+
+        .button:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: #0b1220 !important;
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 768px) {
             .h1-style { font-size: 3rem !important; }
         }
@@ -202,25 +272,27 @@
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png" 
                      alt="Khalid Logo" class="nav-logo h-10 w-10 rounded-full border border-navy-700">
                 <div class="flex flex-col">
-                    <a href="index.html" class="font-extrabold tracking-tight text-lg uppercase leading-none">Khalid Mir</a>
+                    <a href="index.html" class="font-extrabold tracking-tight text-lg uppercase leading-none hover:text-gold transition-colors">Khalid Mir</a>
                     <span class="text-[9px] uppercase tracking-[0.2em] text-secondary-text font-medium mt-1">Marketing & Business Advisor</span>
                 </div>
             </div>
             
-            <div class="hidden md:flex items-center space-x-10">
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="advisory.html" class="nav-link">Advisory</a>
                 <a href="markets.html" class="nav-link text-gold">Markets</a>
                 
-                <button id="themeToggle" aria-label="Toggle Theme" class="text-secondary-text hover:text-gold transition-colors">
+                <a href="https://linktr.ee/Khalidgraphy" target="_blank" class="button px-4 py-2 text-[11px] uppercase tracking-widest font-bold">Let's Connect</a>
+
+                <button id="themeToggle" aria-label="Toggle Theme" class="ml-2 text-secondary-text hover:text-gold transition-colors">
                     <svg id="sunIcon" class="hidden dark:block" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                     <svg id="moonIcon" class="block dark:hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 </button>
             </div>
 
             <div class="flex items-center md:hidden space-x-3">
-                <button id="menuBtn" class="text-primary-text p-2">
+                <button id="menuBtn" class="text-primary-text p-2 hover:text-gold transition-colors">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16M4 16h16"/></svg>
                 </button>
             </div>
@@ -236,6 +308,7 @@
         <a href="about.html" class="mobile-link font-bold tracking-tight">About</a>
         <a href="advisory.html" class="mobile-link font-bold tracking-tight">Advisory</a>
         <a href="markets.html" class="mobile-link font-bold tracking-tight text-gold">Markets</a>
+        <a href="https://linktr.ee/Khalidgraphy" target="_blank" class="mobile-link font-bold text-gold uppercase tracking-widest text-sm">Let's Connect &rarr;</a>
     </div>
 
     <!-- Hero Divider -->
@@ -406,18 +479,25 @@
 
     <!-- Footer -->
     <footer class="pt-12 pb-12 bg-navy-900 border-t border-divider">
-        <div class="container-custom text-center sm:text-left">
-            <div class="mb-8 opacity-50 text-[10px] uppercase tracking-widest font-bold">
-                Independent advisory on strategy, marketing, and digital markets.
+        <div class="container-custom">
+            <div class="flex flex-col sm:flex-row justify-between mb-8 gap-4">
+                <div class="opacity-50 text-[10px] uppercase tracking-widest font-bold text-center sm:text-left">
+                    Independent advisory on strategy, marketing, and digital markets.
+                </div>
+                <div class="opacity-50 text-[10px] uppercase tracking-widest font-bold text-center sm:text-right italic">
+                    Based in Dubai. Working across digital markets.
+                </div>
             </div>
-            <div class="flex flex-col md:flex-row justify-between items-center text-[11px] text-secondary-text uppercase tracking-[0.2em] font-bold gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-center text-[11px] text-secondary-text uppercase tracking-[0.2em] font-bold gap-6 text-center">
                 <span>© <span id="currentYear"></span> Khalid Hussain Mir</span>
-                <div class="flex flex-wrap justify-center sm:justify-end gap-x-8 gap-y-4">
+                <div class="flex flex-wrap justify-center sm:justify-end gap-x-6 sm:gap-x-8 gap-y-4">
+                    <a href="https://linkedin.com/in/Khalidgraphy" target="_blank" class="hover:text-gold transition-colors">LinkedIn</a>
+                    <a href="https://facebook.com/Khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Facebook</a>
                     <a href="https://linktr.ee/khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Digital Ecosystem</a>
                     <span>Powered by <a href="#" class="text-primary-text hover:text-gold transition-colors">Kreative Minds</a></span>
                 </div>
             </div>
-            <div class="mt-10 opacity-40 text-[10px] font-bold italic leading-relaxed w-full lg:whitespace-nowrap">
+            <div class="mt-10 opacity-40 text-[10px] font-bold text-center lg:text-left italic leading-relaxed w-full lg:whitespace-nowrap">
                 This website is not affiliated with, endorsed by, or sponsored by Facebook, Instagram, Meta Platforms, Google LLC, or any of their associated companies.
             </div>
         </div>
@@ -426,7 +506,7 @@
     <script>
         const html = document.documentElement;
         
-        // Theme
+        // Theme Management
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'light') {
             html.classList.remove('dark');
@@ -435,10 +515,23 @@
             html.classList.add('dark');
         }
 
-        // Year
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                html.classList.add('light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.remove('light');
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Dynamic Year
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // Nav
+        // Nav Scroll Effect
         const nav = document.getElementById('mainNav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 40) nav.classList.add('scrolled');
@@ -465,7 +558,7 @@
         menuBtn.addEventListener('click', toggleMenu);
         closeBtn.addEventListener('click', toggleMenu);
 
-        // Animations
+        // Viewport Reveal
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
