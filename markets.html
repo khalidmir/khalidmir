@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Markets | Khalid Hussain Mir</title>
+    
+    <!-- SEO / AIEO Metadata -->
+    <meta name="description" content="Insights on how digital markets behave, how customers think, and how businesses make money across different environments.">
+    <meta name="keywords" content="Khalid Hussain Mir, Digital Markets, Market Behavior, Consumer Psychology, Business Strategy, Dubai Strategist">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#FFD700',
+                        navy: {
+                            900: '#0b1220',
+                            800: '#0f172a',
+                            700: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --primary-text: #111111;
+            --secondary-text: #555555;
+            --divider: #f3f4f6;
+            --gold: #FFD700;
+        }
+
+        .dark, :root {
+            --bg: #0b1220;
+            --bg-alt: #0f172a;
+            --primary-text: #f9f9f9;
+            --secondary-text: #94a3b8;
+            --divider: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--primary-text);
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        @media (min-width: 768px) {
+            body { font-size: 17px; }
+        }
+
+        h1, .h1-style {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            color: var(--primary-text);
+        }
+
+        h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--primary-text);
+            line-height: 1.3;
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--divider);
+        }
+
+        @media (min-width: 1024px) {
+            section { padding: 6rem 0; }
+        }
+
+        .container-custom {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: transparent;
+            transition: all 0.5s ease;
+            height: 80px;
+        }
+
+        nav.scrolled {
+            height: 70px;
+            background: rgba(11, 18, 32, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--divider);
+        }
+
+        .nav-link {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--secondary-text);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--gold) !important;
+        }
+
+        .sidebar-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: var(--gold);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .hero-divider {
+            height: 1px;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: linear-gradient(90deg, transparent, var(--divider), transparent);
+            opacity: 0.3;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .market-reality-card {
+            border-left: 2px solid var(--gold);
+            padding: 2rem;
+            background: rgba(255, 215, 0, 0.02);
+            margin: 2rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .market-grid-block {
+            padding: 2rem;
+            border: 1px solid var(--divider);
+            transition: all 0.4s ease;
+        }
+
+        .market-grid-block:hover {
+            border-color: var(--gold);
+            background: rgba(255, 215, 0, 0.02);
+            transform: translateY(-5px);
+        }
+
+        .pattern-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--divider);
+        }
+
+        .pattern-marker {
+            width: 12px;
+            height: 1px;
+            background: var(--gold);
+            margin-top: 0.8rem;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .h1-style { font-size: 3rem !important; }
+        }
+    </style>
+</head>
+<body class="dark">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 flex items-center" id="mainNav">
+        <div class="container-custom w-full flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png" 
+                     alt="Khalid Logo" class="nav-logo h-10 w-10 rounded-full border border-navy-700">
+                <div class="flex flex-col">
+                    <a href="index.html" class="font-extrabold tracking-tight text-lg uppercase leading-none">Khalid Mir</a>
+                    <span class="text-[9px] uppercase tracking-[0.2em] text-secondary-text font-medium mt-1">Marketing & Business Advisor</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-10">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="advisory.html" class="nav-link">Advisory</a>
+                <a href="markets.html" class="nav-link text-gold">Markets</a>
+                
+                <button id="themeToggle" aria-label="Toggle Theme" class="text-secondary-text hover:text-gold transition-colors">
+                    <svg id="sunIcon" class="hidden dark:block" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg id="moonIcon" class="block dark:hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </div>
+
+            <div class="flex items-center md:hidden space-x-3">
+                <button id="menuBtn" class="text-primary-text p-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16M4 16h16"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu" class="fixed inset-0 bg-navy-900 z-[60] flex flex-col items-center justify-center space-y-8 text-2xl hidden opacity-0 transition-opacity duration-400">
+        <button class="absolute top-8 right-8 p-2" id="closeBtn">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="index.html" class="mobile-link font-bold tracking-tight">Home</a>
+        <a href="about.html" class="mobile-link font-bold tracking-tight">About</a>
+        <a href="advisory.html" class="mobile-link font-bold tracking-tight">Advisory</a>
+        <a href="markets.html" class="mobile-link font-bold tracking-tight text-gold">Markets</a>
+    </div>
+
+    <!-- Hero Divider -->
+    <div class="hero-divider mt-24"></div>
+
+    <!-- 1. Hero -->
+    <header class="pt-16 sm:pt-24 pb-12 sm:pb-20 border-b border-divider">
+        <div class="container-custom">
+            <div class="max-w-4xl reveal">
+                <h1 class="h1-style text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-12 leading-none">
+                    Digital <span class="text-gold">Markets</span>
+                </h1>
+                <div class="space-y-6 text-lg sm:text-2xl text-secondary-text font-medium leading-relaxed max-w-3xl">
+                    <p>Markets are not the same.</p>
+                    <p>What works in one place often fails in another. Not because the tools are different, but because people are different.</p>
+                    <p class="text-primary-text font-bold">Their income levels, purchasing power, expectations, and risk tolerance shape how they make decisions.</p>
+                    <p>This is what defines how business actually works in each market.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Perspective -->
+    <section>
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Perspective</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-8">
+                        <h3 class="text-2xl sm:text-3xl">How I Look at Markets</h3>
+                        <div class="text-secondary-text text-lg space-y-6">
+                            <p>Most discussions around business focus on platforms, tactics, and trends. My focus is different.</p>
+                            <p class="text-primary-text font-semibold text-xl">I look at how people behave inside a market.</p>
+                            <div class="grid grid-cols-2 gap-4 pt-4 text-sm font-bold tracking-widest uppercase">
+                                <div class="p-4 border border-divider transition-all duration-300 hover:border-gold hover:bg-[rgba(255,215,0,0.03)] hover:-translate-y-1 cursor-default">What they trust</div>
+                                <div class="p-4 border border-divider transition-all duration-300 hover:border-gold hover:bg-[rgba(255,215,0,0.03)] hover:-translate-y-1 cursor-default">What they ignore</div>
+                                <div class="p-4 border border-divider transition-all duration-300 hover:border-gold hover:bg-[rgba(255,215,0,0.03)] hover:-translate-y-1 cursor-default">What makes them buy</div>
+                                <div class="p-4 border border-divider transition-all duration-300 hover:border-gold hover:bg-[rgba(255,215,0,0.03)] hover:-translate-y-1 cursor-default">What makes them hesitate</div>
+                            </div>
+                            <p class="pt-4">This understanding shapes everything.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Market Realities -->
+    <section class="bg-navy-800">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Market Realities</span>
+                </div>
+                <div class="md:col-span-8">
+                    <h3 class="text-2xl sm:text-3xl mb-10">Different Markets, Different Realities</h3>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="market-grid-block">
+                            <h4 class="text-gold text-lg mb-4">Trust Dynamics</h4>
+                            <p class="text-sm text-secondary-text leading-relaxed">In some markets, trust is built slowly through depth. In others, speed and visibility matter more than depth.</p>
+                        </div>
+                        <div class="market-grid-block">
+                            <h4 class="text-gold text-lg mb-4">Decision Speed</h4>
+                            <p class="text-sm text-secondary-text leading-relaxed">Some customers compare heavily before buying. Others decide quickly if the value feels immediate and clear.</p>
+                        </div>
+                        <div class="market-grid-block">
+                            <h4 class="text-gold text-lg mb-4">Sensitivity</h4>
+                            <p class="text-sm text-secondary-text leading-relaxed">In some environments, price sensitivity is high. In others, convenience and brand carry more weight.</p>
+                        </div>
+                        <div class="market-grid-block">
+                            <h4 class="text-gold text-lg mb-4">The Logic of Earn/Spend</h4>
+                            <p class="text-sm text-secondary-text leading-relaxed">These differences come from how people live, earn, and spend. Apply the same approach everywhere, and you create friction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Adaptation -->
+    <section>
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Adaptation</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-8">
+                        <h3 class="text-2xl sm:text-3xl">What This Means for Business</h3>
+                        <div class="text-secondary-text text-lg space-y-6">
+                            <p>Business is not about copying strategies. It is about adapting to how the market behaves.</p>
+                            <p>The same product can perform differently in different environments. The difference is not the product—it is how it is understood.</p>
+                            <p class="text-primary-text font-bold text-xl border-l-2 border-gold pl-6 py-2 italic">
+                                Positioning, communication, and timing decide outcomes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Common Mistake -->
+    <section class="bg-navy-800">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Observation</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-8">
+                        <h3 class="text-2xl sm:text-3xl">Common Mistake</h3>
+                        <p class="text-lg text-secondary-text">
+                            Many businesses try to import strategies. They see what is working somewhere else and try to replicate it without understanding the environment. This usually fails because the surface looks similar, but the behavior underneath is different.
+                        </p>
+                        <div class="mt-12">
+                            <h4 class="text-gold uppercase tracking-[0.2em] text-xs font-black mb-6">My Focus is Observing Patterns:</h4>
+                            <div class="space-y-2">
+                                <div class="pattern-item">
+                                    <div class="pattern-marker"></div>
+                                    <span class="text-lg">How people respond to offers</span>
+                                </div>
+                                <div class="pattern-item">
+                                    <div class="pattern-marker"></div>
+                                    <span class="text-lg">How they react to pricing</span>
+                                </div>
+                                <div class="pattern-item">
+                                    <div class="pattern-marker"></div>
+                                    <span class="text-lg">Where trust is built or lost</span>
+                                </div>
+                                <div class="pattern-item">
+                                    <div class="pattern-marker"></div>
+                                    <span class="text-lg">What actually drives decisions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Practical View -->
+    <section class="border-none pb-24">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Grounded View</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-8">
+                        <h3 class="text-2xl sm:text-4xl">Markets are not clean systems. They are human environments.</h3>
+                        <p class="text-secondary-text text-lg">
+                            People do not always behave logically. They respond to context, pressure, perception, and need. Understanding that is more useful than following fixed frameworks.
+                        </p>
+                        <div class="market-reality-card mt-12">
+                            <p class="text-2xl font-bold leading-relaxed">
+                                If you understand the market, you can simplify everything else. If you don’t, even strong ideas struggle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-12 pb-12 bg-navy-900 border-t border-divider">
+        <div class="container-custom text-center sm:text-left">
+            <div class="mb-8 opacity-50 text-[10px] uppercase tracking-widest font-bold">
+                Independent advisory on strategy, marketing, and digital markets.
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[11px] text-secondary-text uppercase tracking-[0.2em] font-bold gap-6">
+                <span>© <span id="currentYear"></span> Khalid Hussain Mir</span>
+                <div class="flex flex-wrap justify-center sm:justify-end gap-x-8 gap-y-4">
+                    <a href="https://linktr.ee/khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Digital Ecosystem</a>
+                    <span>Powered by <a href="#" class="text-primary-text hover:text-gold transition-colors">Kreative Minds</a></span>
+                </div>
+            </div>
+            <div class="mt-10 opacity-40 text-[10px] font-bold italic leading-relaxed w-full lg:whitespace-nowrap">
+                This website is not affiliated with, endorsed by, or sponsored by Facebook, Instagram, Meta Platforms, Google LLC, or any of their associated companies.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const html = document.documentElement;
+        
+        // Theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            html.classList.remove('dark');
+            html.classList.add('light');
+        } else {
+            html.classList.add('dark');
+        }
+
+        // Year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Nav
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        // Mobile Menu
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        function toggleMenu() {
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            if (isOpen) {
+                mobileMenu.classList.remove('opacity-100');
+                setTimeout(() => mobileMenu.classList.add('hidden'), 400);
+            } else {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => mobileMenu.classList.add('opacity-100'), 10);
+            }
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+
+        // Animations
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>
