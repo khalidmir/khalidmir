@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ7P70SGYF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EZ7P70SGYF');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khalid Mir | About | Marketing & Business Advisor</title>
     
+    <link rel="canonical" href="https://khalidmir.com/about.html" />
+
     <!-- SEO / AIEO Metadata -->
     <meta name="description" content="Khalid Hussain Mir (Khalidgraphy) is a Marketing and Business Advisor and Digital Strategist. His work focuses on digital market behavior, business systems, and sustainable growth.">
     <meta name="keywords" content="Khalid Hussain Mir, Khalidgraphy, Business Advisor, Marketing Strategy, Digital Strategist, Business Systems, Dubai Business Consultant">
     
+    <!-- Schema.org Metadata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Khalid Hussain Mir",
+      "alternateName": "Khalidgraphy",
+      "url": "https://khalidmir.com",
+      "jobTitle": "Marketing and Business Advisor",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Kreative Minds"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/Khalidgraphy",
+        "https://youtube.com/@Khalidgraphy",
+        "https://facebook.com/Khalidgraphy"
+      ]
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSEPOnzzC8xUMra4dnKarfFXnkuszreW93vRDaPWpeO2GHwSNogB70eIKd2gfpHqyiH4K1PYWdrLfGSejOwX7FxRXIao6nNPdkRzHCwMdPjbT706bDeBizjEcKY6SRDZfvjWZLHxGY2b_FTHueVWJ8fceRVuhHsw_8x5BlXayTL1kC0aHefSRWiK6yWVs/s320/DP%20Khalid.png">
 
@@ -200,6 +233,27 @@
             text-decoration-color: var(--gold);
         }
 
+        .button {
+            display: inline-block;
+            border: 1px solid var(--primary-text);
+            padding: 12px 24px;
+            background: transparent;
+            color: var(--primary-text);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+
+        .button:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: #0b1220 !important;
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 768px) {
             .h1-style { font-size: 1.875rem !important; }
         }
@@ -219,13 +273,15 @@
                 </div>
             </div>
             
-            <div class="hidden md:flex items-center space-x-8 lg:space-x-10">
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link text-gold">About</a>
-                <a href="index.html#work" class="nav-link">Work</a>
-                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="advisory.html" class="nav-link">Advisory</a>
+                <a href="markets.html" class="nav-link">Markets</a>
                 
-                <button id="themeToggle" aria-label="Toggle Theme" class="text-secondary-text hover:text-gold transition-colors">
+                <a href="https://linktr.ee/Khalidgraphy" target="_blank" class="button px-4 py-2 text-[11px] uppercase tracking-widest font-bold">Let's Connect</a>
+
+                <button id="themeToggle" aria-label="Toggle Theme" class="ml-2 text-secondary-text hover:text-gold transition-colors">
                     <svg id="sunIcon" class="hidden dark:block" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                     <svg id="moonIcon" class="block dark:hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 </button>
@@ -246,8 +302,9 @@
         </button>
         <a href="index.html" class="mobile-link font-bold tracking-tight">Home</a>
         <a href="about.html" class="mobile-link font-bold tracking-tight text-gold">About</a>
-        <a href="index.html#work" class="mobile-link font-bold tracking-tight">Work</a>
-        <a href="index.html#contact" class="mobile-link font-bold tracking-tight">Contact</a>
+        <a href="advisory.html" class="mobile-link font-bold tracking-tight">Advisory</a>
+        <a href="markets.html" class="mobile-link font-bold tracking-tight">Markets</a>
+        <a href="https://linktr.ee/Khalidgraphy" target="_blank" class="mobile-link font-bold text-gold uppercase tracking-widest text-sm">Let's Connect &rarr;</a>
     </div>
 
     <!-- Hero Divider -->
@@ -258,7 +315,7 @@
         <div class="container-custom">
             <div class="max-w-4xl reveal">
                 <h1 class="h1-style text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-10 leading-[1.1]">
-                    About Khalid Mir | <span class="text-gold">Khalidgraphy</span>
+                    About <span class="text-gold">Khalid Mir</span> | Khalidgraphy
                 </h1>
                 <p class="text-lg sm:text-2xl text-secondary-text font-medium leading-relaxed tracking-tight">
                     Khalid Hussain Mir (aka; <a href="https://khalidgraphy.com" target="_blank" class="text-gold hover:underline decoration-gold underline-offset-4">Khalidgraphy</a>) is a Marketing and Business Advisor and Digital Strategist. His work focuses on how digital markets behave and how businesses build sustainable revenue systems.
@@ -358,14 +415,21 @@
     <!-- Footer -->
     <footer class="pt-12 pb-12 bg-navy-900 border-t border-divider">
         <div class="container-custom">
-            <div class="mb-8 opacity-50 text-[10px] uppercase tracking-widest font-bold text-center sm:text-left">
-                Independent advisory on strategy, marketing, and digital markets.
+            <div class="flex flex-col sm:flex-row justify-between mb-8 gap-4">
+                <div class="opacity-50 text-[10px] uppercase tracking-widest font-bold text-center sm:text-left">
+                    Independent advisory on strategy, marketing, and digital markets.
+                </div>
+                <div class="opacity-50 text-[10px] uppercase tracking-widest font-bold text-center sm:text-right italic">
+                    Based in Dubai. Working across digital markets.
+                </div>
             </div>
             <div class="flex flex-col md:flex-row justify-between items-center text-[11px] text-secondary-text uppercase tracking-[0.2em] font-bold gap-6">
                 <div class="flex items-center space-x-2">
                     <span>© <span id="currentYear"></span> Khalid Hussain Mir</span>
                 </div>
-                <div class="flex flex-wrap justify-center sm:justify-end items-center gap-x-8 gap-y-4">
+                <div class="flex flex-wrap justify-center sm:justify-end items-center gap-x-6 sm:gap-x-8 gap-y-4">
+                    <a href="https://linkedin.com/in/Khalidgraphy" target="_blank" class="hover:text-gold transition-colors">LinkedIn</a>
+                    <a href="https://facebook.com/Khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Facebook</a>
                     <a href="https://linktr.ee/khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Digital Ecosystem</a>
                     <span>Powered by <a href="#" class="text-primary-text hover:text-gold transition-colors">Kreative Minds</a></span>
                 </div>
