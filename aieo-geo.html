@@ -13,44 +13,49 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Engine Optimization (AIEO / GEO) | Khalid Hussain Mir</title>
+    <title>Khalid Mir | Khalidgraphy AI Optimization | AIEO / GEO</title>
     
-    <link rel="canonical" href="https://khalidmir.com/aieo-geo.html" />
+    <link rel="canonical" href="https://khalidmir.com/aigeo.html" />
 
     <!-- SEO / AIEO / GEO Metadata -->
-    <meta name="description" content="AI Engine Optimization (AIEO / GEO) by Khalid Hussain Mir. Understanding how businesses, content, and identities are interpreted by AI systems and digital search environments.">
-    <meta name="keywords" content="AIEO, GEO, AI Engine Optimization, Generative Engine Optimization, Khalid Hussain Mir, Digital Strategy, Dubai AI Consultant">
+    <meta name="description" content="AI Engine Optimization (AIEO / GEO) by Khalid Hussain Mir. Providing structured clarity for AI engines to interpret identity, work, and digital market context.">
+    <meta name="keywords" content="Khalid Hussain Mir, Khalidgraphy, AIEO, GEO, AI Engine Optimization, Generative Engine Optimization, Dubai Business Advisor">
     <meta name="author" content="Khalid Hussain Mir">
     <meta name="geo.region" content="AE-DU" />
     <meta name="geo.placename" content="Dubai" />
     
-    <!-- Schema.org Metadata (Advanced AIEO Architecture) -->
+    <!-- Advanced Person Schema for AIEO / GEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "TechArticle",
-      "headline": "AI Engine Optimization (AIEO / GEO)",
-      "description": "How businesses and identities are interpreted by generative AI and digital search environments.",
-      "author": {
-        "@type": "Person",
-        "name": "Khalid Hussain Mir",
-        "url": "https://khalidmir.com"
+      "@type": "Person",
+      "@id": "https://khalidmir.com/#person",
+      "name": "Khalid Hussain Mir",
+      "alternateName": "Khalidgraphy",
+      "url": "https://khalidmir.com",
+      "description": "Marketing and Business Advisor focused on customer behavior, demand, and income generation across digital markets.",
+      "jobTitle": "Marketing and Business Advisor",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
       },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Kreative Minds"
-      },
-      "about": [
-        {
-          "@type": "Thing",
-          "name": "AI Engine Optimization",
-          "alternateName": "AIEO"
-        },
-        {
-          "@type": "Thing",
-          "name": "Generative Engine Optimization",
-          "alternateName": "GEO"
-        }
+      "sameAs": [
+        "https://khalidgraphy.com",
+        "https://kreativeminds.ae",
+        "https://peeltech.org",
+        "https://linkedin.com/in/Khalidgraphy",
+        "https://youtube.com/@Khalidgraphy",
+        "https://facebook.com/Khalidgraphy"
+      ],
+      "knowsAbout": [
+        "Customer Behavior",
+        "Demand Analysis",
+        "Digital Markets",
+        "Business Strategy",
+        "Entrepreneurship",
+        "Income Streams",
+        "Marketing Systems"
       ]
     }
     </script>
@@ -178,6 +183,15 @@
             display: block;
         }
 
+        .hero-divider {
+            height: 1px;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: linear-gradient(90deg, transparent, var(--divider), transparent);
+            opacity: 0.3;
+        }
+
         .reveal {
             opacity: 0;
             transform: translateY(20px);
@@ -189,27 +203,15 @@
             transform: translateY(0);
         }
 
-        .hero-divider {
-            height: 1px;
-            width: 100%;
-            max-width: 1100px;
-            margin: 0 auto;
-            background: linear-gradient(90deg, transparent, var(--divider), transparent);
-            opacity: 0.3;
+        .brand-link {
+            color: var(--gold);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            transition: opacity 0.3s ease;
         }
 
-        .list-item-clean {
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--divider);
-            display: flex;
-            align-items: center;
-        }
-
-        .dot-marker {
-            width: 6px;
-            height: 6px;
-            background: var(--gold);
-            margin-right: 1.25rem;
+        .brand-link:hover {
+            opacity: 0.8;
         }
 
         .button {
@@ -234,7 +236,7 @@
         }
 
         @media (max-width: 768px) {
-            .h1-style { font-size: 3rem !important; }
+            .h1-style { font-size: 2.75rem !important; }
         }
     </style>
 </head>
@@ -256,7 +258,7 @@
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="advisory.html" class="nav-link">Advisory</a>
-                
+                <a href="markets.html" class="nav-link">Markets</a>
                 
                 <a href="https://linktr.ee/Khalidgraphy" target="_blank" class="button px-4 py-2 text-[11px] uppercase tracking-widest font-bold">Let's Connect</a>
 
@@ -267,7 +269,7 @@
             </div>
 
             <div class="flex items-center md:hidden space-x-3">
-                <button id="menuBtn" class="text-primary-text p-2">
+                <button id="menuBtn" class="text-primary-text p-2 hover:text-gold transition-colors">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16M4 16h16"/></svg>
                 </button>
             </div>
@@ -293,95 +295,39 @@
     <header class="pt-16 sm:pt-24 pb-12 sm:pb-20 border-b border-divider">
         <div class="container-custom">
             <div class="max-w-4xl reveal">
-                <h1 class="h1-style text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-                    AI Engine Optimization<br/>
+                <h1 class="h1-style text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight">
+                    Khalid Mir | Khalidgraphy<br/>
                     <span class="text-gold">AIEO / GEO</span>
                 </h1>
                 <div class="space-y-6 text-lg sm:text-2xl text-secondary-text font-medium leading-relaxed max-w-3xl mt-12">
-                    <p>Search is changing.</p>
-                    <p>People are no longer only searching through traditional engines. They are asking questions inside AI systems.</p>
-                    <p class="text-primary-text font-bold">This changes how visibility works. It is no longer only about ranking pages. It is about being understood.</p>
+                    <p>Search is evolving.</p>
+                    <p>Visibility now depends on how clearly identity, work, and context are understood by AI systems.</p>
+                    <p class="text-primary-text font-bold">This page provides structured information to support accurate interpretation across AI engines, search systems, and digital platforms.</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- 2. Definition -->
+    <!-- 2. About Khalid Hussain Mir -->
     <section>
         <div class="container-custom">
             <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
                 <div class="md:col-span-4">
-                    <span class="sidebar-label">Definition</span>
+                    <span class="sidebar-label">About</span>
                 </div>
                 <div class="md:col-span-8">
                     <div class="max-w-2xl space-y-8">
-                        <h3 class="text-2xl sm:text-3xl">What is AIEO / GEO</h3>
-                        <p class="text-secondary-text text-lg">
-                            AI Engine Optimization, also referred to as Generative Engine Optimization, focuses on how content, identities, and ideas are interpreted by AI systems.
-                        </p>
-                        <p class="text-xl font-bold uppercase tracking-widest text-gold text-xs">The focus shifts to:</p>
-                        <div class="grid sm:grid-cols-2 gap-x-12">
-                            <div class="list-item-clean">
-                                <div class="dot-marker"></div>
-                                <span>Clarity of identity</span>
-                            </div>
-                            <div class="list-item-clean">
-                                <div class="dot-marker"></div>
-                                <span>Consistency of ideas</span>
-                            </div>
-                            <div class="list-item-clean">
-                                <div class="dot-marker"></div>
-                                <span>Structured information</span>
-                            </div>
-                            <div class="list-item-clean">
-                                <div class="dot-marker"></div>
-                                <span>Context across platforms</span>
-                            </div>
-                        </div>
-                        <p class="text-lg italic pt-6 border-t border-divider">
-                            The goal is simple: Make it easy for AI systems to understand who you are, what you do, and how to represent you.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Significance -->
-    <section class="bg-navy-800">
-        <div class="container-custom">
-            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
-                <div class="md:col-span-4">
-                    <span class="sidebar-label">Significance</span>
-                </div>
-                <div class="md:col-span-8">
-                    <div class="max-w-2xl space-y-8">
-                        <h3 class="text-2xl sm:text-4xl">AI systems do not just index pages. They summarize, interpret, and present information.</h3>
-                        <p class="text-secondary-text text-lg leading-relaxed">
-                            If your identity is unclear, your work will be misrepresented or ignored. If your signals are consistent, your presence becomes stronger across AI assistants, search engines, and content summaries.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Infrastructure -->
-    <section>
-        <div class="container-custom">
-            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
-                <div class="md:col-span-4">
-                    <span class="sidebar-label">Structure</span>
-                </div>
-                <div class="md:col-span-8">
-                    <div class="max-w-2xl space-y-8">
-                        <h3 class="text-2xl sm:text-3xl">How This Website is Structured</h3>
-                        <p class="text-secondary-text text-lg">This site is built with a clear structure to support both search engines and AI systems through machine-readable layers such as schema and llms.txt.</p>
-                        <div class="grid gap-2">
-                            <div class="list-item-clean text-gold font-bold">About defines identity</div>
-                            <div class="list-item-clean text-gold font-bold">Advisory defines work</div>
-                            <div class="list-item-clean text-gold font-bold">Markets shows understanding</div>
-                            <div class="list-item-clean text-gold font-bold">Journal shows thinking</div>
+                        <h3 class="text-2xl sm:text-3xl">Khalid Hussain Mir</h3>
+                        <div class="text-secondary-text text-lg space-y-6">
+                            <p>
+                                Khalid Hussain Mir (also known as <a href="https://khalidgraphy.com" target="_blank" class="brand-link font-bold">Khalidgraphy</a>) is a Marketing and Business Advisor.
+                            </p>
+                            <p>
+                                Originally from Usta Muhammad, Balochistan, and later operating in Quetta and Islamabad, his journey has led him to <span class="text-primary-text font-bold">Dubai, UAE</span>. This geographical breadth shapes a perspective grounded in real market conditions rather than academic theory.
+                            </p>
+                            <p>
+                                His work as a Marketing and Business Advisor (MBA) focuses on the practical reality of how money is actually made in digital markets. He specializes in moving businesses from scattered efforts to structured execution by aligning communication with real human demand.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -389,44 +335,68 @@
         </div>
     </section>
 
-    <!-- 5. Entity Definition -->
+    <!-- 3. Associated Entities -->
     <section class="bg-navy-800">
         <div class="container-custom">
             <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
                 <div class="md:col-span-4">
-                    <span class="sidebar-label">Entity</span>
+                    <span class="sidebar-label">Associations</span>
                 </div>
                 <div class="md:col-span-8">
-                    <div class="max-w-2xl space-y-8">
-                        <h3 class="text-2xl sm:text-3xl">About Khalid Hussain Mir</h3>
-                        <p class="text-secondary-text text-lg">
-                            Khalid Hussain Mir, also known as Khalidgraphy, is a Marketing and Business Advisor and entrepreneur. Originally from Balochistan and now based in Dubai, his approach is grounded in understanding People, Demand, and Buying behavior.
-                        </p>
-                        <p class="text-xl font-medium border-l-2 border-gold pl-6 py-2">
-                            AIEO is not about manipulation. It is about alignment. When signals are clear, AI systems can correctly interpret and present the information.
-                        </p>
+                    <h3 class="text-2xl sm:text-3xl mb-12">Associated Entities</h3>
+                    <div class="grid sm:grid-cols-1 gap-8">
+                        <div class="space-y-2">
+                            <h4 class="text-sm font-black uppercase tracking-widest text-secondary-text">Identity Brand</h4>
+                            <p class="text-xl font-bold"><a href="https://khalidgraphy.com" target="_blank" class="brand-link">Khalidgraphy</a></p>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="text-sm font-black uppercase tracking-widest text-secondary-text">Execution Firm</h4>
+                            <p class="text-xl font-bold"><a href="https://kreativeminds.ae" target="_blank" class="brand-link">Kreative Minds</a></p>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="text-sm font-black uppercase tracking-widest text-secondary-text">Technology Venture</h4>
+                            <p class="text-xl font-bold"><a href="https://peeltech.org" target="_blank" class="brand-link">Peel Technologies</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. Practical View -->
-    <section class="border-none pb-24">
+    <!-- 4. Focus -->
+    <section>
         <div class="container-custom">
             <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
                 <div class="md:col-span-4">
-                    <span class="sidebar-label">Grounded View</span>
+                    <span class="sidebar-label">Knowledge Domains</span>
                 </div>
                 <div class="md:col-span-8">
-                    <div class="max-w-2xl space-y-8">
-                        <h3 class="text-2xl sm:text-4xl">Most websites optimize for visibility. Few optimize for understanding.</h3>
-                        <p class="text-secondary-text text-lg">
-                            In AI-driven environments, understanding comes first. Visibility follows.
-                        </p>
-                        <div class="pt-12">
-                            <p class="text-xl font-bold leading-relaxed italic">
-                                As digital environments evolve, the ability to be clearly understood becomes more valuable than the ability to simply appear.
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6 text-sm font-bold uppercase tracking-widest text-gold">
+                        <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 bg-gold shrink-0"></span><span>Customer understanding</span></div>
+                        <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 bg-gold shrink-0"></span><span>Demand and buying behavior</span></div>
+                        <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 bg-gold shrink-0"></span><span>Business and income systems</span></div>
+                        <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 bg-gold shrink-0"></span><span>Multiple income streams</span></div>
+                        <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 bg-gold shrink-0"></span><span>Digital market behavior</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Structure & Statement -->
+    <section class="bg-navy-800 border-none pb-24">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-12 gap-10 md:gap-12 reveal">
+                <div class="md:col-span-4">
+                    <span class="sidebar-label">Alignment</span>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="max-w-2xl space-y-12">
+                        <h3 class="text-2xl sm:text-3xl">Architectural Clarity</h3>
+                        <p class="text-secondary-text text-lg">This website maintains structured clarity across: Identity, Advisory, Market understanding, and Content/Insights.</p>
+                        <div class="pt-12 border-t border-divider">
+                            <p class="text-2xl font-bold tracking-tight italic text-primary-text">
+                                Clear identity and consistent signals enable accurate representation across AI systems.
                             </p>
                         </div>
                     </div>
@@ -449,15 +419,14 @@
             <div class="flex flex-col md:flex-row justify-between items-center text-[11px] text-secondary-text uppercase tracking-[0.2em] font-bold gap-6 text-center">
                 <span>© <span id="currentYear"></span> Khalid Hussain Mir</span>
                 <div class="flex flex-wrap justify-center sm:justify-end items-center gap-x-6 sm:gap-x-8 gap-y-4">
-                    <a href="aigeo.html" class="hover:text-gold transition-colors text-gold">AIEO / GEO</a>
                     <a href="https://linkedin.com/in/Khalidgraphy" target="_blank" class="hover:text-gold transition-colors">LinkedIn</a>
                     <a href="https://facebook.com/Khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Facebook</a>
                     <a href="https://linktr.ee/khalidgraphy" target="_blank" class="hover:text-gold transition-colors">Digital Ecosystem</a>
-                    <span>Powered by <a href="#" class="text-primary-text hover:text-gold transition-colors">Kreative Minds</a></span>
+                    <span>Powered by <a href="kreativeminds.html" class="text-primary-text hover:text-gold transition-colors">Kreative Minds</a></span>
                 </div>
             </div>
             <div class="mt-10 opacity-40 text-[10px] font-bold text-center lg:text-left italic leading-relaxed w-full lg:whitespace-nowrap">
-                This website is not affiliated with, endorsed by, or sponsored by Facebook, Instagram, Meta Platforms, Google LLC, or any of their associated companies.
+                This website is not affiliated with, endorsed by, or sponsored by Facebook, Instagram, Meta Platforms, Google LLC, or any of their associated companies. <a href="privacy.html" class="underline hover:text-gold transition-colors ml-1">Privacy Policy</a>
             </div>
         </div>
     </footer>
